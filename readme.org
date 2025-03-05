@@ -7,3 +7,13 @@
 #+OPTIONS:   H:4 toc:t num:2
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
+history | head -10
+history
+history -R | head -10
+history -R | head 10
+git push origin main
+git remote add origin git@github.com:Kanon-Yamamoto/my_work_space.git
+git branch -M main
+git commit -m 'first commit'
+git add -A
+ls -lat
