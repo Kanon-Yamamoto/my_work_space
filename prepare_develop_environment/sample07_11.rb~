@@ -1,5 +1,0 @@
-# coding: utf-8
-class Bar
-  @@a = "Hello"
-  p @@a #@@->クラス変数
-end

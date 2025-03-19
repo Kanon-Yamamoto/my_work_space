@@ -1,6 +1,0 @@
-# coding: utf-8
-a = "Hello"
-
-def foo #fooメソッド定義
-  p a
-end
