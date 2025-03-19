@@ -1,0 +1,45 @@
+#+OPTIONS: ^:{}
+#+STARTUP: indent nolineimages overview num
+#+TITLE: comment for all
+#+AUTHOR: Shigeto R. Nishitani
+#+EMAIL:     (concat "shigeto_nishitani@mac.com")
+#+LANGUAGE:  jp
+#+OPTIONS:   H:4 toc:t num:2
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+* c08_objects
+* c07_variables
+#+begin_src bash
+> bat test_var.rb
+       | File: test_var.rb
+   1   | puts var
+> ruby test_var.rb
+test_var.rb:1:in `<main>': undefined local variable or method `var' for main:Object (NameError)
+#+end_src
+
+* c06_literals
+* c05_loops
+- times, while
+* c04_rock_paper_scissors
+- if-else-end
+- if, unless
+- case-when-else-end
+
+* c03_snake_case_vs_CamelCase to heisenberg 
+- 早速やってますね．
+- 感想のmemoをごちゃごちゃつけとくといいですよ．
+  - うまく動かなかったところ，
+  - 理解しづらかった所
+  - 覚えるkeyになるから．
+- file名
+  - camel caseとsnake caseをごちゃにしない
+  - 頭に，章と数字を振る
+  - LuckNum.rb -> c03_14_luck_num.rb
+
+* sub modules
+- [[https://qiita.com/kinpira/items/3309eb2e5a9a422199e9][Git submoduleの押さえておきたい理解ポイントのまとめ]]
+- git submodule add git@github.com:Ritoru0606/my_work_space.git kaito
+- git log  --name-status
+- git branch daddygongon
+- git switch daddygongon
+- gh pr create -w
