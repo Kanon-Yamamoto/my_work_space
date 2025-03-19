@@ -1,0 +1,5 @@
+$a = "Hello" #グローバル変数
+
+def foo
+  p $a
+end

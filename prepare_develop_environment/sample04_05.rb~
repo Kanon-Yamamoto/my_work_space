@@ -1,0 +1,6 @@
+temperate = 20
+if temprature < 10
+  puts "今日は寒いです"
+else
+  puts "今日は寒くありません"
+end

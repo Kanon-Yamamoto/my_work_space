@@ -1,0 +1,6 @@
+# coding: utf-8
+puts "あなたが使っているプログラミング言語は?"
+name = gets
+if name == "Ruby"
+  puts "正解です！"
+end

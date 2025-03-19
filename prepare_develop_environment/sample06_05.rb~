@@ -1,0 +1,2 @@
+puts "abc\nxyz"
+puts 'abc\nxyz'
