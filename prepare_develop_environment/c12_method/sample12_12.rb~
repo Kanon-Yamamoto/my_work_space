@@ -1,0 +1,7 @@
+def hello
+  puts "Hello"
+  return
+end
+
+ret = hello
+p ret

@@ -1,0 +1,5 @@
+h = {}
+h["apple"] = "リンゴ"
+puts h["apple"]
+
+h["apple"] = "オレンジ"
