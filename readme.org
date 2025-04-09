@@ -8,6 +8,9 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
 * link
+- [[https://kwansei-gakuin.zoom.us/j/96919760597?pwd=dURyMklGQXRNTEdIaGRZMTc3d2F2UT09][zoom]]
+  - ミーティング ID: 969 1976 0597
+  - パスコード: 421095
 - [[https://kwanseio365-my.sharepoint.com/:f:/g/personal/cru32369_nuc_kwansei_ac_jp/EtN79dSsjHJKs6FD2drXffoBOwIK39uj5UGwtbL4WDnTjg?e=eAVKhE][ゼミの動画置き場]]
 #+begin_src
 - [[url][name]]
