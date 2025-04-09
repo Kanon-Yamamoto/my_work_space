@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="jp" xml:lang="jp">
+<head>
+<!-- 2025-03-19 Wed 12:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>comment for all</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Shigeto R. Nishitani" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/search.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/search.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">comment for all</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org7d2cf01">1. c08_objects</a></li>
+<li><a href="#orgae8d095">2. c07_variables</a></li>
+<li><a href="#org20beb30">3. c06_literals</a></li>
+<li><a href="#org72e600f">4. c05_loops</a></li>
+<li><a href="#org9756895">5. c04_rock_paper_scissors</a></li>
+<li><a href="#org2c6deb3">6. c03_snake_case_vs_CamelCase to heisenberg</a></li>
+<li><a href="#org0f08622">7. chunking</a></li>
+<li><a href="#org6ef8e97">8. sub modules</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7d2cf01" class="outline-2">
+<h2 id="org7d2cf01"><span class="section-number-2">1</span> c08_objects</h2>
+</div>
+<div id="outline-container-orgae8d095" class="outline-2">
+<h2 id="orgae8d095"><span class="section-number-2">2</span> c07_variables</h2>
+<div class="outline-text-2" id="text-2">
+<div class="org-src-container">
+<pre class="src src-bash">&gt; bat test_var.rb
+       | File: test_var.rb
+   1   | puts var
+&gt; ruby test_var.rb
+test_var.rb:1:in `&lt;main&gt;': undefined local variable or method `var' for main:Object (NameError)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org20beb30" class="outline-2">
+<h2 id="org20beb30"><span class="section-number-2">3</span> c06_literals</h2>
+</div>
+<div id="outline-container-org72e600f" class="outline-2">
+<h2 id="org72e600f"><span class="section-number-2">4</span> c05_loops</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>times, while</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9756895" class="outline-2">
+<h2 id="org9756895"><span class="section-number-2">5</span> c04_rock_paper_scissors</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>if-else-end</li>
+<li>if, unless</li>
+<li>case-when-else-end</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2c6deb3" class="outline-2">
+<h2 id="org2c6deb3"><span class="section-number-2">6</span> c03_snake_case_vs_CamelCase to heisenberg</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>早速やってますね．</li>
+<li>感想のmemoをごちゃごちゃつけとくといいですよ．
+<ul class="org-ul">
+<li>うまく動かなかったところ，</li>
+<li>理解しづらかった所</li>
+<li>記憶を呼び覚ますkeyになるから．</li>
+</ul></li>
+<li>file名
+<ul class="org-ul">
+<li>CamelCaseとsnake_caseをごちゃにしない</li>
+<li>rubyでは，file名はsnakeで書きます．</li>
+<li>頭に，章と数字を振る</li>
+<li>LuckNum.rb -&gt; c03_14_luck_num.rb</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0f08622" class="outline-2">
+<h2 id="org0f08622"><span class="section-number-2">7</span> chunking</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>鏡餅</li>
+<li>mkdir c03_if_else</li>
+<li>mv sample03* c03_if_else # *はwild cardなんでも</li>
+<li>目次(table of contents)みたいに
+番号(index)と中身(contents)で名前(name)をつける</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6ef8e97" class="outline-2">
+<h2 id="org6ef8e97"><span class="section-number-2">8</span> sub modules</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li><a href="https://qiita.com/kinpira/items/3309eb2e5a9a422199e9">Git submoduleの押さえておきたい理解ポイントのまとめ</a></li>
+<li>git submodule add git@github.com:Ritoru0606/my_work_space.git kaito</li>
+<li>git log  &#x2013;name-status</li>
+<li>git branch daddygongon</li>
+<li>git switch daddygongon</li>
+<li>gh pr create -w</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Shigeto R. Nishitani</p>
+<p class="date">Created: 2025-03-19 Wed 12:36</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -7,7 +7,7 @@
 #+OPTIONS:   H:4 toc:t num:2
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
-* link
+* [#B] link
 - [[https://kwanseio365-my.sharepoint.com/:f:/g/personal/cru32369_nuc_kwansei_ac_jp/EtN79dSsjHJKs6FD2drXffoBOwIK39uj5UGwtbL4WDnTjg?e=eAVKhE][ゼミの動画置き場]]
 #+begin_src
 - [[url][name]]

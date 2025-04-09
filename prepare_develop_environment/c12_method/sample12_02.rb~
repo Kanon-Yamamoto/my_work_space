@@ -1,0 +1,8 @@
+$var = 1000
+
+def foo
+  puts $var
+end
+
+foo
+ 
