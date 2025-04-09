@@ -1,4 +1,4 @@
-#+OPTIONS: ^:{}
+d#+OPTIONS: ^:{}
 #+STARTUP: indent nolineimages overview num
 #+TITLE: comment for all
 #+AUTHOR: Shigeto R. Nishitani
@@ -36,12 +36,13 @@ test_var.rb:1:in `<main>': undefined local variable or method `var' for main:Obj
   - rubyでは，file名はsnakeで書きます．
   - 頭に，章と数字を振る
   - LuckNum.rb -> c03_14_luck_num.rb
-* chunking
+* chunking to kanon
 - 鏡餅
 - mkdir c03_if_else
 - mv sample03* c03_if_else # *はwild cardなんでも
 - 目次(table of contents)みたいに
   番号(index)と中身(contents)で名前(name)をつける
+- rm literal.rb # remove
 
 * sub modules
 - [[https://qiita.com/kinpira/items/3309eb2e5a9a422199e9][Git submoduleの押さえておきたい理解ポイントのまとめ]]
