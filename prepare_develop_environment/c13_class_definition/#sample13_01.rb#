@@ -1,0 +1,4 @@
+class Apple
+end          #この2クラス定義
+
+Q = Apple.new
