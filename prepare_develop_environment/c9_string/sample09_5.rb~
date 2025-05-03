@@ -1,3 +1,0 @@
-# coding: utf-8
-p "abcdefg".upcase
-#upcace->文字列中の小文字を大文字に

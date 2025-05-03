@@ -1,5 +1,0 @@
-# coding: utf-8
-a.push "abc"
-a << "abc"
-#配列の末尾に追加
-#2行は同じ意味
