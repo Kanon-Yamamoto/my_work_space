@@ -1,5 +1,5 @@
 # coding: utf-8
-$var = 1000 #グローバル変数
+$var = 1000 #$をつけるとグローバル変数
 
 def foo　
   puts $var　#varを参照できる
