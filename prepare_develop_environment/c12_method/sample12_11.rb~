@@ -1,9 +1,0 @@
-# coding: utf-8
-defbkakezan(a,b)
-   a*b
-end
-
-ret = kakezan(2,5)
-p ret
-
-#returnは省略できる

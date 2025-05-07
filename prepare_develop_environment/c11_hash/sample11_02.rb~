@@ -1,4 +1,0 @@
-# coding: utf-8
-h={}
-h["apple"] = "リンゴ"
-puts h["apple"]

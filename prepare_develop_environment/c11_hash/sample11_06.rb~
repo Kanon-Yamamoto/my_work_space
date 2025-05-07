@@ -1,5 +1,0 @@
-h = {}
-p h
-
-h={"apple" =>100, "orange" =>50}
-p h
