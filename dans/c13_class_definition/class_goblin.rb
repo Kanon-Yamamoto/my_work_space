@@ -1,0 +1,71 @@
+# coding: utf-8
+class Apple
+  def initialize
+    @sweetness = rand(10)
+  end
+
+  def sweetness
+    @sweetness
+  end
+end
+
+class Fairy
+  def pluck(tree)
+    tree.shift
+  end
+  def carry(tree,basket)
+    apple = pluck(tree)
+    basket.push apple
+    puts "よいしょ"
+  end
+  def eat(apple)
+    if apple.sweetness>3
+      puts "甘くておいしい"
+    else
+      puts "酸っぱいよ"
+    end
+  end
+  def hungry?
+    rand(3)==0
+  end
+  def work(tree,basket)
+    return if tree.empty?
+    if hungry?
+      apple = pluck(tree)
+      eat apple
+    else
+      carry tree, basket
+    end
+  end
+end
+
+class Hobbit < Fairy
+  def hungry?
+    true
+  end
+end
+
+class Goblin<Fairy
+  def work(tree,basket)
+    if rand(2) == 0
+     super
+    else
+      puts "めんどくさいなぁ…"
+    end
+  end
+end
+
+tree = Array.new(3){Apple.new}
+p tree
+
+basket=[]
+
+#fairy = Fairy.new
+goblin = Goblin.new
+while tree.size>0
+  #fairy.work(tree,basket)
+  goblin.work(tree,basket)
+  p ["tree", tree]
+  p ["basket", basket]
+end
+
