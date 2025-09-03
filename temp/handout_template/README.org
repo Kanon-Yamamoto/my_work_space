@@ -1,0 +1,41 @@
+#+qiita_teams: 3255d8acea40ca5b287f
+#+qiita_private: 0bd89adfb9fed05d0166
+#+OPTIONS: ^:{}
+#+STARTUP: indent nolineimages overview num
+#+TITLE: ハンドアウト書き方
+#+AUTHOR: Yoshimasa Yuri
+#+EMAIL:     (concat "yurimore.tm@gmail.com")
+#+LANGUAGE:  jp
+# +OPTIONS:   H:4 toc:t num:2
+#+OPTIONS:   toc:nil
+#+TAG: latex, handout
+#+TWITTER: off
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+* ハンドアウトの書き方
+- [[https://texwiki.texjp.org/?TeX%E5%85%A5%E6%89%8B%E6%B3%95][latexインストール]]
+    - 各自の環境に合わせてインストール
+- handout_template を自分のところにコピーする (mvはやめて)
+    -  grad_research_23/yuri/ にある
+
+#+begin_src
+#自分のディレクトリで
+cp -r ../../yuri/handout_template . 
+#とすればコピーできる
+#+end_src
+
+- 基本は中にあるhandout.orgを編集していく
+
+- pdfにするときは
+#+begin_src
+rake pdf
+#+end_src
+- で可能
+
+- handout_sample.pdfは自分が4回生の中間発表ハンドアウトなので参考にどうぞ
+
+
+
+
+
+
+

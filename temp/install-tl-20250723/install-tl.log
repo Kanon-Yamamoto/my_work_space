@@ -1,0 +1,143 @@
+TeX Live installer invocation: install-tl 
+Trying to verify cryptographic signatures!
+Loading https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/tlpkg/texlive.tlpdb
+Installing TeX Live 2025 from: https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet (verified)
+Platform: x86_64-linux => 'GNU/Linux on x86_64'
+Distribution: net  (downloading)
+Using URL: https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet
+Directory for temporary files: /tmp/76a1Crany_
+Installer revision: 75865
+Database revision: 75854
+Settings:
+  TEXDIR: "/usr/local/texlive/2025"
+  TEXMFCONFIG: "~/.texlive2025/texmf-config"
+  TEXMFHOME: "~/texmf"
+  TEXMFLOCAL: "/usr/local/texlive/texmf-local"
+  TEXMFSYSCONFIG: "/usr/local/texlive/2025/texmf-config"
+  TEXMFSYSVAR: "/usr/local/texlive/2025/texmf-var"
+  TEXMFVAR: "~/.texlive2025/texmf-var"
+  binary_aarch64-linux: ""
+  binary_amd64-freebsd: ""
+  binary_amd64-netbsd: ""
+  binary_armhf-linux: ""
+  binary_i386-freebsd: ""
+  binary_i386-linux: ""
+  binary_i386-netbsd: ""
+  binary_i386-solaris: ""
+  binary_universal-darwin: ""
+  binary_windows: ""
+  binary_x86_64-cygwin: ""
+  binary_x86_64-darwinlegacy: ""
+  binary_x86_64-linux: "1"
+  binary_x86_64-linuxmusl: ""
+  binary_x86_64-solaris: ""
+  collection-basic: "1"
+  collection-bibtexextra: "1"
+  collection-binextra: "1"
+  collection-context: "1"
+  collection-fontsextra: "1"
+  collection-fontsrecommended: "1"
+  collection-fontutils: "1"
+  collection-formatsextra: "1"
+  collection-games: "1"
+  collection-humanities: "1"
+  collection-langarabic: "1"
+  collection-langchinese: "1"
+  collection-langcjk: "1"
+  collection-langcyrillic: "1"
+  collection-langczechslovak: "1"
+  collection-langenglish: "1"
+  collection-langeuropean: "1"
+  collection-langfrench: "1"
+  collection-langgerman: "1"
+  collection-langgreek: "1"
+  collection-langitalian: "1"
+  collection-langjapanese: "1"
+  collection-langkorean: "1"
+  collection-langother: "1"
+  collection-langpolish: "1"
+  collection-langportuguese: "1"
+  collection-langspanish: "1"
+  collection-latex: "1"
+  collection-latexextra: "1"
+  collection-latexrecommended: "1"
+  collection-luatex: "1"
+  collection-mathscience: "1"
+  collection-metapost: "1"
+  collection-music: "1"
+  collection-pictures: "1"
+  collection-plaingeneric: "1"
+  collection-pstricks: "1"
+  collection-publishers: "1"
+  collection-texworks: "1"
+  collection-wintools: ""
+  collection-xetex: "1"
+  doc_splitting_supported: "1"
+  free_size: "974247"
+  inst_platform: "x86_64-linux"
+  instopt_adjustpath: ""
+  instopt_adjustrepo: "1"
+  instopt_letter: ""
+  instopt_portable: ""
+  instopt_write18_restricted: "1"
+  n_collections_available: "41"
+  n_collections_selected: "40"
+  n_systems_available: "15"
+  n_systems_selected: "1"
+  page: ""
+  selected_scheme: "scheme-full"
+  src_splitting_supported: "1"
+  this_platform: "x86_64-linux"
+  tlpdbopt_autobackup: "1"
+  tlpdbopt_backupdir: "tlpkg/backups"
+  tlpdbopt_create_formats: "1"
+  tlpdbopt_desktop_integration: "1"
+  tlpdbopt_file_assocs: "1"
+  tlpdbopt_generate_updmap: ""
+  tlpdbopt_install_docfiles: "1"
+  tlpdbopt_install_srcfiles: "1"
+  tlpdbopt_location: "https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet"
+  tlpdbopt_post_code: "1"
+  tlpdbopt_sys_bin: "/usr/local/bin"
+  tlpdbopt_sys_info: "/usr/local/share/info"
+  tlpdbopt_sys_man: "/usr/local/share/man"
+  tlpdbopt_w32_multi_user: "1"
+  total_size: "8963"
+Installing to: /usr/local/texlive/2025
+Installing [1/4, time/total: ??:??/??:??]: hyphen-base [23k]
+Installing [2/4, time/total: 00:02/03:21]: kpathsea [1042k]
+Installing [3/4, time/total: 00:03/00:06]: texlive-scripts [554k]
+TeXLive::TLUtils::check_file_and_remove: checksums differ for /tmp/76a1Crany_/588CoDxj1w/texlive-scripts.tar.xz:
+TeXLive::TLUtils::check_file_and_remove:   tlchecksum=de35f80e5661f70e6dbfbcb88d37b6a023b3a4071d92385335bbc2231de4b6dfdcb1d25f92c26a4aaedd7ff8843488004d5e425060733f4d33cb80d3fabe4824, arg=587d2c482b832fc942db6a98d3ffd070f528ec2fa3ca35e69a7346882ba53505d17833ae2df78a405b7fbac74192760023fa9dddef0f1efc8ec047eb9f04eb47
+TeXLive::TLUtils::check_file_and_remove: backtrace:
+ -> tlpkg/TeXLive/TLUtils.pm:2768: TeXLive::TLUtils::check_file_and_remove
+ -> tlpkg/TeXLive/TLPDB.pm:1989: TeXLive::TLUtils::unpack
+ -> tlpkg/TeXLive/TLPDB.pm:1806: TeXLive::TLPDB::_install_data
+ -> tlpkg/TeXLive/TLPDB.pm:1722: TeXLive::TLPDB::not_virtual_install_package
+ -> tlpkg/TeXLive/TLUtils.pm:1895: TeXLive::TLPDB::install_package
+ -> install-tl:2402: TeXLive::TLUtils::install_packages
+ -> install-tl:1110: main::do_install_packages
+ -> install-tl:770: main::do_installation
+TeXLive::TLUtils::check_file_and_remove:   removing /tmp/76a1Crany_/588CoDxj1w/texlive-scripts.tar.xz, but saving copy in /tmp/jmNeeNnDY6
+TLPDB::_install_data: downloading did not succeed (check_file_and_remove failed) for https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/archive/texlive-scripts.tar.xz
+TLUtils::install_packages: Failed to install texlive-scripts
+                           texlive-scripts will be retried later.
+Installing [4/4, time/total: 00:03/00:06]: texlive.infra [610k]
+Retrying to install: texlive-scripts [554k]
+TeXLive::TLUtils::check_file_and_remove: checksums differ for /tmp/76a1Crany_/QL0zVn9yr9/texlive-scripts.tar.xz:
+TeXLive::TLUtils::check_file_and_remove:   tlchecksum=de35f80e5661f70e6dbfbcb88d37b6a023b3a4071d92385335bbc2231de4b6dfdcb1d25f92c26a4aaedd7ff8843488004d5e425060733f4d33cb80d3fabe4824, arg=587d2c482b832fc942db6a98d3ffd070f528ec2fa3ca35e69a7346882ba53505d17833ae2df78a405b7fbac74192760023fa9dddef0f1efc8ec047eb9f04eb47
+TeXLive::TLUtils::check_file_and_remove: backtrace:
+ -> tlpkg/TeXLive/TLUtils.pm:2768: TeXLive::TLUtils::check_file_and_remove
+ -> tlpkg/TeXLive/TLPDB.pm:1989: TeXLive::TLUtils::unpack
+ -> tlpkg/TeXLive/TLPDB.pm:1806: TeXLive::TLPDB::_install_data
+ -> tlpkg/TeXLive/TLPDB.pm:1722: TeXLive::TLPDB::not_virtual_install_package
+ -> tlpkg/TeXLive/TLUtils.pm:1915: TeXLive::TLPDB::install_package
+ -> install-tl:2402: TeXLive::TLUtils::install_packages
+ -> install-tl:1110: main::do_install_packages
+ -> install-tl:770: main::do_installation
+TeXLive::TLUtils::check_file_and_remove:   removing /tmp/76a1Crany_/QL0zVn9yr9/texlive-scripts.tar.xz, but saving copy in /tmp/5mPpPsWlwA
+TLPDB::_install_data: downloading did not succeed (check_file_and_remove failed) for https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/archive/texlive-scripts.tar.xz
+Installation failed.
+Rerunning the installer will try to restart the installation.
+Or you can restart by running the installer with:
+  install-tl --profile installation.profile [YOUR-EXTRA-ARGS]

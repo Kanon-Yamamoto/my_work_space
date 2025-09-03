@@ -1,0 +1,107 @@
+#+TITLE: グループ内の共有データを日付軸で管理するアプリの開発
+#+ID: 27020731
+#+AUTHOR: 細井 大輝
+#+LANGUAGE: jp
+#+OPTIONS: ^:{}
+#+LATEX_HEADER:\renewcommand{\bibname}
+
+\bibitem{Copyright (c) 2015 Chris Oliver} simple_calendar, https://github.com/excid3/simple_calendar
+\bibitem{Copyright (c) 2007 Michael Bleigh and Intridea Inc} acts-as-taggable-on, https://github.com/mbleigh/acts-as-taggable-on
+
+//アプリの方向性
+英語に略してからいらない部分は削る
+継続して利用されるアプリ
+アイデアはメモにする
+
+// 抽象的
+いつ取ったメモなのか、どんな内容のメモだったのかを管理しやすくする.
+報連相の報連の部分を共有しやすい、参照しやすくする.
+/// 最終的な目的
+メモを取る、見返す作業を癖付けたい.
+データ参照をする際の無駄な時間を削る.
+*社会人として必須である報連相を徹底できるようになってほしい.(しなければならない.)
+
+
+// 具体的
+そこで,データを日付ごとに管理することによって出席状況や,
+その日に取ったメモなどを一目で把握できるWebアプリを作成する.
+私が作成したアプリは日付軸でデータを管理することを手助けする.
+超整理法を参考に日付軸で情報を整理することにする.
+
+
+// Discordの歴史、使用目的
+Discordという名前は、「クールな響きで『話す』ことに関係がある」「言いやすく、綴りも覚えやすい」
+「商標やウェブサイトで使用できる」という理由で選ばれた.
+加えて、「ゲームコミュニティにおける不和」が、彼らが解決したい問題だったという.
+
+* 序論
+
+** 研究の背景
+西谷研究室では情報共有ツールとしてDiscord[1]を使用していた.
+Discordは「オンラインゲームをしながら、世界中の友達とコミュニケーションをとる」[2]
+という難題を解決するために開発されたという背景がある.
+しかし,Discordのようなコミュニティツール上での情報共有のデメリットは以下の3つが挙げられる.
+1. 図1のようにデータは降順に表示されるため、過去に共有されたデータはスクロールして遡るしかない
+2. データのタグ付け機能が存在しないため、データの絞り込みが困難である
+3. 日付ごとのデータ管理ができないため、整理しづらい
+結果として共有されたデータが整理されずグループメンバーが混乱してしまい,情報共有を怠ることに繋がりかねない.
+そこで,データを参照する際の混乱を避け,データを共有する・見返す作業を癖付けることを目的とする.
+#+CAPTION: Discordで情報共有した場合の画面.
+#+name: discord_demerit
+#+attr_latex: :width 5cm
+file:./figs/discord_demerit.png
+
+
+* 開発手法
+開発環境としてRuby, Ruby on Rails(RoR)を選定した.
+RoRの利点は以下の3点である.
+1. 広いプラットフォームからのアプリ利用が可能
+2. 日本語のドキュメントが充実しているため開発ハードルが低い
+3. ライブラリが豊富である
+
+データの管理方法としては日付軸
+RoRと「超」整理法の時間軸検索を組み合わせ、
+データを日付ごとに管理することによって出席状況や,
+その日に取ったメモなどを一目で把握できるWebアプリを作成する.
+
+
+
+
+
+* 結果
+** 日付ごとにデータを参照する動作とメリットについて
+カレンダーの表示はgem simple_calendar[3]を使用した.
+私が作成したWebアプリでの情報共有のメリットは以下の2点である.
+1. 投稿されたデータは保存したい日付をカラムとして保持しているため、日付ごとのデータ管理が容易である
+2. 投稿されたデータ一覧画面では、タグでのデータ絞り込み機能[4]が利用可能である
+また、投稿されたデータを参照するまでのアクション数を比較する.
+※ここではどちらのアプリもログイン済みであることを前提とする.
+Discordではサーバーの選択、チャンネルの選択、画面のスクロールなど最低でも3つのアクションを
+要する.
+私が作成したWebアプリでは日付選択の1アクションでデータを参照することが可能である.
+#+CAPTION: 参照したい日付に保存されたデータを参照する一連の動作.
+#+name: groups_calendar
+#+attr_latex: :width 10cm
+file:./figs/app_motion.png
+
+
+* 今後の課題
+今回は基本的なCreate(生成),Read(読み取り),Update(更新),Delete(削除)処理(CRUD処理)に加えて,
+データの絞り込み機能,グループ作成,メンバー招待,参加機能を作成した.
+今後は共有データの見逃しを防ぐためにグループメンバーが情報を共有した後,メールなどに通知する機能を追加
+していく.
+また,西谷研究室ではローカルPC(PC)上でメモを取ることが多いため,PC上で作成したメモを
+私が作成したWebアプリに送信できるスクリプトの開発を検討する.
+
+
+\small\setlength\baselineskip{10pt}
+\begin{thebibliography}{9}
+\bibitem{Discord Inc.} Discord, https://discord.com/
+\bibitem{Discord Inc.} Discord会社概要, https://discord.com/company
+\bibitem{Copyright (c) 2015 Chris Oliver} simple\_calendar, \https{://github.com/excid3/simple_calendar}
+\bibitem{Copyright (c) 2007 Michael Bleigh and Intridea Inc} acts-as-taggable-on, https://github.com/mbleigh/acts-as-taggable-on
+\bibitem{Copyright (c) YassLab 株式会社} Ruby on Railsチュートリアル, https://railstutorial.jp/
+\bibitem{Railsドキュメント (c) 2023} Ruby on Railsドキュメント(v7.0.0), https://railsdoc.com/
+\end{thebibliography}
+
+

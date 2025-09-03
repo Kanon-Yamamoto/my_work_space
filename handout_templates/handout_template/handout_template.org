@@ -1,0 +1,31 @@
+#+TITLE: ハンドアウトサンプル
+#+ID: 0123456
+#+AUTHOR: 名前
+#+LANGUAGE: jp
+#+OPTIONS: ^:{}
+#+LATEX_HEADER:\renewcommand{\bibname}
+
+
+* hoge
+
+** hello
+exmaple sentence \cite{otsuki}．
+qwertyuiop \cite{vaspmanual} .
+
+#+CAPTION: 図の入れ方．
+#+name: fig
+#+attr_latex: :width 6cm
+file:./../figs/example.png
+
+* foo
+test
+
+
+\small\setlength\baselineskip{10pt}
+\begin{thebibliography}{9}
+\bibitem{otsuki} 大槻徴, 「アルミニウムの粒界エネルギーに関する研究」, 京都大学学術情報リポジトリ, (1990), p.118,238.
+\bibitem{vaspmanual} 西谷滋人,『はじめての VASP 原理から使用法，適用例まで』,(2011).
+\end{thebibliography}
+
+\bibitem{Copyright (c) 2015 Chris Oliver} simple_calendar, https://github.com/excid3/simple_calendar
+\bibitem{Copyright (c) 2007 Michael Bleigh and Intridea Inc.} acts-as-taggable-on, https://github.com/mbleigh/acts-as-taggable-on

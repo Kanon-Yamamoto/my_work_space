@@ -1,0 +1,27 @@
+#+TITLE:
+#+ID: 27020731
+#+AUTHOR: 細井 大輝
+#+LANGUAGE: jp
+#+OPTIONS: ^:{}
+#+LATEX_HEADER:\renewcommand{\bibname}
+
+
+* 序論
+
+** 研究の背景
+
+* 手法
+
+* 結果
+
+* 今後の課題
+
+* foo
+test
+
+
+\small\setlength\baselineskip{10pt}
+\begin{thebibliography}{9}
+\bibitem{otsuki} 大槻徴, 「アルミニウムの粒界エネルギーに関する研究」, 京都大学学術情報リポジトリ, (1990), p.118,238.
+\bibitem{vaspmanual} 西谷滋人,『はじめての VASP 原理から使用法，適用例まで』,(2011).
+\end{thebibliography}
