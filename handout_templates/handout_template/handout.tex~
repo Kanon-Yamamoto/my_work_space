@@ -21,61 +21,63 @@
 
 
 \section{序論}
-\label{sec:org3a4b0dd}
-旅行計画の共有ツールとして、Googleマイマップ[1]を利用するケースが増えている。
-Googleマイマップは「自分の地図を作成し共有することができる」[1]というニーズに応えるために開発された背景がある。
-しかし、Googleマイマップを旅行のプランニング用途で使用する場合、以下のような課題が存在する。
+\label{sec:orgb4df143}
+旅行計画の共有ツールとして,Googleマイマップ[1]を利用するケースが増えている.
+Googleマイマップは「自分の地図を作成し共有することができる」[1]というニーズに応えるために開発された背景がある.
+しかし,Googleマイマップを旅行のプランニング用途で使用する場合,以下のような課題が存在する.
 \begin{enumerate}
-\item スポットを日程ごとに分けて管理する機能が標準では備わっておらず、旅行日ごとの予定が視覚的に把握しづらい。
-\item 登録したスポットの訪問順序が地図上で明確に表示されないため、移動の流れが分かりにくい。
+\item 観光場所を日程ごとに分けて管理する機能が標準では備わっておらず,旅行日ごとの予定が視覚的に把握しづらい.
+\item 登録したスポットの訪問順序が地図上で明確に表示されないため,移動の流れが分かりにくい.
 \end{enumerate}
-結果として、地図上の情報が整理されず、家族や友人など旅行メンバーとの共有時に混乱が生じ、最終的に地図が活用されなくなるケースもある。
-そこで、旅行先の情報を日程や訪問順に沿って視覚的に整理し、家族や友人との円滑な情報共有を促進する旅行プランニングアプリの開発を目指す。
+結果として,訪問予定の観光地の情報が複数の地図やファイルに分かれてしまい, 全体の予定を整理しづらくなるだけでなく,
+家族や友人など旅行メンバーとの共有時に混乱が生じることがあった。
+そこで,旅行先の情報を日程や訪問順に沿って視覚的に整理し,家族や友人との円滑な情報共有を促進する旅行プランニングアプリの開発を目指す.
 
 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=7cm]{./figs/discord.jpg}
-\caption{\label{fig:org3cf5f7c}Googleマイマッツプでスケジュールを組んだ時の画面}
+\caption{\label{fig:orgae37ed1}Googleマイマップでスケジュールを組んだ時の画面.}
 \end{figure}
 
 
 \section{開発手法}
-\label{sec:orgdc66f83}
+\label{sec:orgde12c9e}
 開発環境としてDjango[2]を選定した.
-Djangoの利点は以下の3つである。[3]
+Djangoの利点は以下の2つである.[3]
 \begin{enumerate}
 \item 迅速な開発が可能.
 \item フォーム作成が容易にできる.
-\item 
 \end{enumerate}
-また開発はpythonを用いて開発を行った。
+また開発はpythonを用いて開発を行った.
 
 
 
 
 
 \section{結果}
-\label{sec:org0ce69f9}
-今回開発したWebアプリには、以下のような利点がある。
+\label{sec:orgb0f1966}
+今回開発したWebアプリには,以下のような利点がある.
 \begin{enumerate}
-\item 旅行日数を入力することで、各日程の項目が自動生成されるため、日付ごとの旅行プランニングが容易になる。
-\item 訪問順に番号が付与されることで、旅程の流れを地図上で視覚的に把握しやすくなる。
+\item 旅行日数を入力することで,各日程の項目が自動生成されるため,日付ごとの旅行プランニングが容易になる.
+\item 訪問順に番号が付与されることで,旅程の流れを地図上で視覚的に把握しやすくなる.
 \end{enumerate}
-Googleマイマッツプでは、日数分のファイルを個別に作成・管理する必要があり、情報が分散してしまうことで視認性や共有性
-に課題があった。これに対し、本アプリでは旅行日程を事前に入力することで、各日程の構成が自動的に整理され、
-旅行計画の一元管理と視覚的な理解が可能となる。
+Googleマイマップでは、旅行日ごとに個別のレイヤーを作成・管理する必要があるため, 観光地や移動ルートなどの情報が複数の地図に分かれてしまい,
+全体の予定を一目で把握しづらくなる. また,地図が複数に分かれていることで,旅行メンバーとの情報共有にも手間がかかり,
+混乱が生じやすいという課題があった.
+これに対し,本アプリでは旅行日程を事前に入力することで,各日程の構成が自動的に整理され,
+旅行計画の一元管理と視覚的な理解が可能となる.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=10cm]{./figs/app_motion.png}
-\caption{\label{fig:orge4be755}参照したい日付に保存されたデータを参照する一連の動作.}
+\caption{\label{fig:org160ceea}参照したい日付に保存されたデータを参照する一連の動作.}
 \end{figure}
 
 
 \section{今後の課題}
-\label{sec:org3c58f1d}
+\label{sec:org608c621}
 今回は基本的なCreate(生成),Read(読み取り),Update(更新),Delete(削除)処理(CRUD処理)に加えて,
 データの絞り込み機能,グループ作成,メンバー招待・参加機能を開発した.
 今後は共有データの見逃しを防ぐための通知機能,ローカルPC上で作成したメモから
@@ -87,7 +89,7 @@ Googleマイマッツプでは、日数分のファイルを個別に作成・�
 \small\setlength\baselineskip{10pt}
 \begin{thebibliography}{9}
 
-\bibitem{Google My Maps} Google マイマップ,https://www.google.co.jp/intl/ja/maps/about/mymaps/.
+\bibitem{Google My Maps} Google マイマップ,\url{https://www.google.co.jp/intl/ja/maps/about/mymaps/}.
 \bibitem{Django}Djangoドキュメント,https://docs.djangoproject.com/ja/5.1/topics/
 \bibitem{Django}Djangoの概要 ,https://docs.djangoproject.com/ja/5.1/intro/overview/.
 \end{thebibliography}
