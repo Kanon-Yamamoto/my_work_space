@@ -9,11 +9,15 @@
 
 
 * link
-- [[https://kwansei-gakuin.zoom.us/j/96919760597?pwd=dURyMklGQXRNTEdIaGRZMTc3d2F2UT09][zoom]]
+- value="{{ request.GET.search }}"
+この部分がポイントです。
+
+検索語を入力して送信した後、ページが再表示されても、入力欄にその語が残るようにするための仕組みです。
+
+Djangoテンプレートでは、request.GET.search に送信された検索語が格納されているので、それを value にセットしています。[[https://kwansei-gakuin.zoom.us/j/96919760597?pwd=dURyMklGQXRNTEdIaGRZMTc3d2F2UT09][zoom]]
   - ミーティング ID: 969 1976 0597
   - パスコード: 421095
--
-[[https://kwansei-gakuin.zoom.us/j/96919760597?pwd=dURyMklGQXRNTEdIaGRZMTc3d2F2UT09#success][zoom]]
+-[[https://kwansei-gakuin.zoom.us/j/96919760597?pwd=dURyMklGQXRNTEdIaGRZMTc3d2F2UT09#success][zoom]]
 - [[https://kwanseio365-my.sharepoint.com/:f:/g/personal/cru32369_nuc_kwansei_ac_jp/EtN79dSsjHJKs6FD2drXffoBOwIK39uj5UGwtbL4WDnTjg?e=eAVKhE][ゼミの動画置き場]]
 #+begin_src
 - [[url][name]]

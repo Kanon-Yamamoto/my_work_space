@@ -21,7 +21,7 @@ Googleマイマップは「自分の地図を作成し共有することがで�
 #+CAPTION: Googleマイマップでスケジュールを組んだ時の画面.
 #+name: discord_demerit
 #+attr_latex: :width 7cm
-file:./figs/discord.jpg
+file:./figs/map.PNG
 
 
 * 開発手法

@@ -21,7 +21,7 @@
 
 
 \section{序論}
-\label{sec:org576a304}
+\label{sec:orge261f79}
 旅行計画の共有ツールとして,Googleマイマップ[1]を利用するケースが増えている.
 Googleマイマップは「自分の地図を作成し共有することができる」[1]というニーズに応えるために開発された背景がある.
 しかし,Googleマイマップを旅行のプランニング用途で使用する場合,以下のような課題が存在する.
@@ -30,34 +30,31 @@ Googleマイマップは「自分の地図を作成し共有することがで�
 \item 登録したスポットの訪問順序が地図上で明確に表示されないため,移動の流れが分かりにくい.
 \end{enumerate}
 結果として,訪問予定の観光地の情報が複数の地図やファイルに分かれてしまい, 全体の予定を整理しづらくなるだけでなく,
-家族や友人など旅行メンバーとの共有時に混乱が生じることがあった。
+家族や友人など旅行メンバーとの共有時に混乱が生じることがあった.
 そこで,旅行先の情報を日程や訪問順に沿って視覚的に整理し,家族や友人との円滑な情報共有を促進する旅行プランニングアプリの開発を目指す.
 
 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=7cm]{./figs/discord.jpg}
-\caption{\label{fig:org69a908b}Googleマイマップでスケジュールを組んだ時の画面.}
+\includegraphics[width=7cm]{./figs/map.PNG}
+\caption{\label{fig:org7ed5ef8}Googleマイマップでスケジュールを組んだ時の画面.}
 \end{figure}
 
 
 \section{開発手法}
-\label{sec:org7f0e23c}
+\label{sec:org0921bf9}
 開発環境としてDjango[2]を選定した.
 Djangoの利点は以下の2つである.[3]
 \begin{enumerate}
 \item 迅速な開発が可能.
 \item フォーム作成が容易にできる.
 \end{enumerate}
-また開発はpythonを用いて開発を行った.
-
-
-
+また開発はPython, HTML, JavaScript, CSSを使用し、UIライブラリとしてはBootstrapをを用いて開発を行った.
 
 
 \section{結果}
-\label{sec:orgf4fd8a9}
+\label{sec:org1986df1}
 今回開発したWebアプリには,以下のような利点がある.
 \begin{enumerate}
 \item 旅行日数を入力することで,各日程の項目が自動生成されるため,日付ごとの旅行プランニングが容易になる.
@@ -72,12 +69,12 @@ Googleマイマップでは、旅行日ごとに個別のレイヤーを作成�
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=10cm]{./figs/app_motion.png}
-\caption{\label{fig:orgf82e9c5}参照したい日付に保存されたデータを参照する一連の動作.}
+\caption{\label{fig:org595fc94}参照したい日付に保存されたデータを参照する一連の動作.}
 \end{figure}
 
 
 \section{今後の課題}
-\label{sec:org88af1da}
+\label{sec:orge33d91c}
 今回は基本的なCreate(生成),Read(読み取り),Update(更新),Delete(削除)処理(CRUD処理)に加えて,
 データの絞り込み機能,グループ作成,メンバー招待・参加機能を開発した.
 今後は共有データの見逃しを防ぐための通知機能,ローカルPC上で作成したメモから
@@ -91,6 +88,6 @@ Googleマイマップでは、旅行日ごとに個別のレイヤーを作成�
 
 \bibitem{Google My Maps} Google マイマップ,\url{https://www.google.co.jp/intl/ja/maps/about/mymaps/}.
 \bibitem{Django}Djangoドキュメント,\url{https://docs.djangoproject.com/ja/5.1/topics/}.
-\bibitem{Django}Djangoの概要 ,https://docs.djangoproject.com/ja/5.1/intro/overview/.
+\bibitem{Django}Djangoの概要 ,\url{https://docs.djangoproject.com/ja/5.1/intro/overview/}.
 \end{thebibliography}
 \end{document}
