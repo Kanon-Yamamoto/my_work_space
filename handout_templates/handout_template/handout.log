@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 SEP 2025 21:17
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 SEP 2025 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -146,19 +146,25 @@ Overfull \hbox (30.58644pt too wide) in paragraph at lines 68--69
  []
 
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 83.
+(Font)              scaled to size 8.64899pt on input line 84.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 83.
+(Font)              scaled to size 8.64899pt on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 83.
+(Font)              <9> on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 83.
+(Font)              <5> on input line 84.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 83.
+(Font)              scaled to size 4.805pt on input line 84.
 
 
 [1
 
+
+]
+
+
+
+[2
 
 ] (./handout.aux)
  ***********
@@ -174,10 +180,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  1246 strings out of 468460
  19854 string characters out of 5447603
- 435850 words of memory out of 5000000
+ 434850 words of memory out of 5000000
  29909 multiletter control sequences out of 15000+600000
  637101 words of font info for 87 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 57i,8n,65p,248b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,254b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on handout.dvi (1 page, 6092 bytes).
+Output written on handout.dvi (2 pages, 6652 bytes).
