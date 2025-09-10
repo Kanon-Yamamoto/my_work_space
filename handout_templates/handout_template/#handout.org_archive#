@@ -1,0 +1,25 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/kanon/my_work_space/handout_templates/handout_template/handout.org
+
+
+* 結果
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2025-09-10 Wed 12:11
+  :ARCHIVE_FILE: ~/my_work_space/handout_templates/handout_template/handout.org
+  :ARCHIVE_CATEGORY: handout
+  :END:
+今回開発したWebアプリは,以下のような動作を行う.
+
+1. 旅行日数を入力すると,各日付に対応した日程項目が自動生成されるため,日ごとの旅行プランを簡単に立てることができる.
+2. 登録された旅行期間に基づき,「完了した旅行」「旅行中」「予定の旅行」「期間未設定」のいずれに該当するかを判定し,色分けして表示することで,旅行の状態を視覚的に把握しやすくする[図2].
+3.  旅行名や説明文に含まれるキーワードで検索できるため,目的の旅行をすばやく見つけることができる.
+これにより,旅行計画の一元管理と視覚的な理解が可能となる.
+
+#+CAPTION: 旅行日付に基づく時系列判定と色分けによる視覚的管理を行ったときの画面.
+#+name: groups_calendar
+#+attr_latex: :width 10cm
+file:./figs/trip1.png
+
+
