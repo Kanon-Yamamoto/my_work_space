@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 SEP 2025 14:20
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 SEP 2025 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,9 +137,6 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 40.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 File: ./figs/trip1.png Graphic file (type bmp)
 <./figs/trip1.png>
@@ -183,4 +180,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  57i,8n,65p,248b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on handout.dvi (1 page, 5904 bytes).
+Output written on handout.dvi (1 page, 6092 bytes).
