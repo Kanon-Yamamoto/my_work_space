@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  11 SEP 2025 13:32
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  11 SEP 2025 21:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -133,15 +133,15 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 File: ./figs/rireki1.png Graphic file (type bmp)
 <./figs/rireki1.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 40.
+(Font)              scaled to size 8.64899pt on input line 41.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 40.
+(Font)              scaled to size 8.64899pt on input line 41.
 
 
 File: ./figs/trip1.png Graphic file (type bmp)
 <./figs/trip1.png>
 
-Overfull \hbox (30.58644pt too wide) in paragraph at lines 70--71
+Overfull \hbox (30.58644pt too wide) in paragraph at lines 71--72
  [][] 
  []
 
@@ -152,17 +152,17 @@ Overfull \hbox (30.58644pt too wide) in paragraph at lines 70--71
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 86.
+(Font)              scaled to size 8.64899pt on input line 87.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 86.
+(Font)              scaled to size 8.64899pt on input line 87.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 86.
+(Font)              <9> on input line 87.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 86.
+(Font)              <5> on input line 87.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 86.
+(Font)              scaled to size 4.805pt on input line 87.
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 []\OT1/cmr/m/n/9 Django \JY1/mc/m/n/9 の概要 \OT1/cmr/m/n/9 ,$\OT1/cmtt/m/n/9 h
 ttps : / / www . djangoproject .
  []
@@ -193,4 +193,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  57i,8n,65p,248b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on handout.dvi (2 pages, 7448 bytes).
+Output written on handout.dvi (2 pages, 7404 bytes).
