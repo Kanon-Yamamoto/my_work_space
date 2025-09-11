@@ -25,9 +25,11 @@ file:./figs/rireki1.png
 
 * 開発手法
 開発環境としてDjango[2]を選定した.
+Djangoは、PythonベースのWebフレームワークである.
 Djangoの利点は以下の2つである[3].
-1. 迅速な開発が可能.
-2. フォーム作成が容易にできる. 
+1. django-admin startproject コマンドにより,必要なファイルやフォルダが一式自動で作成されるため,迅速な開発が可能.
+2. Djangoが提供するModelForm機能により,フォーム作成が容易にできる.
+3. セキュリティ対策を実装しなくても,Djangoというフレームワーク自体が標準で安全性を確保する仕組みを備えているため安全である. 
 また開発はPython, HTML, JavaScript, CSSを使用し、UIライブラリとしてはBootstrapを用いて開発を行った.
 
 
@@ -57,6 +59,6 @@ file:./figs/trip1.png
 
 \bibitem{旅しお} 旅しお,\url{https://tabisio.com/},(2025/09/05 accessed).
 \bibitem{Django}Djangoドキュメント,\url{https://docs.djangoproject.com/ja/5.1/topics/},(2025/09/05 accessed).
-\bibitem{Django}Djangoの概要 ,\url{https://docs.djangoproject.com/ja/5.1/intro/overview/},(2025/09/05 accessed).
+\bibitem{Django}Djangoの概要 ,\url{https://www.djangoproject.com/},(2025/09/05 accessed).
 \end{thebibliography}
 
