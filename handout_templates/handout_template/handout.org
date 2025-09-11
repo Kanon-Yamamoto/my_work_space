@@ -60,6 +60,6 @@ file:./figs/trip1.png
 
 \bibitem{旅しお} 旅しお,\url{https://tabisio.com/},(2025/09/05 accessed).
 \bibitem{Django}Djangoドキュメント,\url{https://docs.djangoproject.com/ja/5.1/topics/},(2025/09/05 accessed).
-\bibitem{Django}Djangoの概要 ,\url{https://www.djangoproject.com/},(2025/09/05 accessed).
+\bibitem{Django}Django,\url{https://www.djangoproject.com/},(2025/09/05 accessed).
 \end{thebibliography}
 
