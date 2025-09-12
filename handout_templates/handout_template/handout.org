@@ -43,7 +43,7 @@ Djangoの利点は以下の2つである[3].
 
 #+CAPTION: 旅行日付に基づく時系列判定と色分けによる視覚的管理を行ったときの画面.
 #+name: groups_calendar
-#+attr_latex: :width 10cm
+#+attr_latex: :width 8cm
 file:./figs/trip1.png
 
 
