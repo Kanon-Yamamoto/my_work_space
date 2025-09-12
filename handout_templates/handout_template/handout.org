@@ -4,6 +4,7 @@
 #+LANGUAGE: jp
 #+OPTIONS: ^:{}
 #+LATEX_HEADER:\renewcommand{\bibname}
+#+LATEX_HEADER: \documentclass{jsarticle}
 
 
 * 序論
@@ -38,13 +39,10 @@ Djangoの利点は以下の2つである[3].
 また,ユーザーの記憶が曖昧な場合でも関連するキーワードから目的の旅行を容易に特定することが可能となり,再訪計画にも活用が可能になった.
 
 #+CAPTION: 旅行日付に基づく時系列判定と色分けによる視覚的管理を行ったときの画面.
-#+name: groups_calendar
-<<<<<<< HEAD
-#+attr_latex: :width 8cm
-=======
+#+name: map
 #+attr_latex: :width 7cm
->>>>>>> 7311fca (handout_0912)
 file:./figs/trip1.png
+
 
 * 今後の課題
 旅行日付に基づく色分け表示,キーワード検索機能を開発した.
@@ -57,7 +55,7 @@ file:./figs/trip1.png
 \begin{thebibliography}{9}
 
 \bibitem{旅しお} 旅しお,\url{https://tabisio.com/},(2025/09/05 accessed).
-\bibitem{Django}Djangoドキュメント,\url{https://docs.djangoproject.com/ja/5.1/topics/},(2025/09/05 accessed).
-\bibitem{Django}Django,\url{https://www.djangoproject.com/},(2025/09/05 accessed).
+\bibitem{Django-doc}Djangoドキュメント,\url{https://docs.djangoproject.com/ja/5.1/topics/},(2025/09/05 accessed).
+\bibitem{Django-site}Django,\url{https://www.djangoproject.com/},(2025/09/05 accessed).
 \end{thebibliography}
 
