@@ -47,7 +47,7 @@ def convert_thesis(lines)
   \begin{document}
 
   \title{TITLE}
-  \author{情報科学科 \hspace{5mm} STUDENT_ID \hspace{5mm} NAME}
+  \author{情報工学課程 \hspace{5mm} STUDENT_ID \hspace{5mm} NAME}
   \date{}
 
   \maketitle
