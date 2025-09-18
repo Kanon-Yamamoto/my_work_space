@@ -19,7 +19,7 @@
 #+CAPTION: 「旅しお」で作成したしおりの履歴表示画面.
 #+name: discord_demerit
 #+attr_latex: :width 6cm
-file:./figs/rireki1.png
+file:./figs/shiori2.png
 
 * 開発手法
 開発環境としてDjangoを選定した.

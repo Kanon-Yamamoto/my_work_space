@@ -24,7 +24,7 @@
 
 
 \section{序論}
-\label{sec:org52c1b6b}
+\label{sec:orga034704}
 修学旅行などにおいて,参加者に対して事前に配布されるしおりは,旅程の把握や所持品の確認,集合時間の共有などを目的とした重要な情報媒体である.
 近年では,紙媒体に代わりスマートフォンなどを用いて旅行情報を閲覧・共有するニーズが高まっており,これに応える形で「旅しお」[1]などのWebサービスが登場している.
 しかし,友人・家族旅行のプランニング用途で過去の履歴を参照する場合,以下のような課題が存在する.
@@ -37,12 +37,12 @@
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=6cm]{./figs/rireki1.png}
-\caption{\label{fig:org0a27973}「旅しお」で作成したしおりの履歴表示画面.}
+\includegraphics[width=6cm]{./figs/shiori2.png}
+\caption{\label{fig:orgfadeb20}「旅しお」で作成したしおりの履歴表示画面.}
 \end{figure}
 
 \section{開発手法}
-\label{sec:org748cafc}
+\label{sec:org10b3452}
 開発環境としてDjangoを選定した.
 Djangoは,PythonベースのWebフレームワークである.
 Djangoの利点は以下の3つである[2].
@@ -54,7 +54,7 @@ Djangoの利点は以下の3つである[2].
 また開発はCopilot[3]を参照しながら,Python, HTML, JavaScript, CSSを使用し,UIライブラリとしてはBootstrapを用いた.
 
 \section{結果}
-\label{sec:orgcf3b0fe}
+\label{sec:org9c66c5f}
 今回開発したWebアプリは,以下のような動作を行う.
 
 \begin{enumerate}
@@ -67,12 +67,12 @@ Djangoの利点は以下の3つである[2].
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=6cm]{./figs/trip1.png}
-\caption{\label{fig:org29071a8}旅行日付に基づく時系列判定と色分けによる視覚的管理を行ったときの画面.}
+\caption{\label{fig:orge8e35ac}旅行日付に基づく時系列判定と色分けによる視覚的管理を行ったときの画面.}
 \end{figure}
 
 
 \section{今後の課題}
-\label{sec:orge0deb0c}
+\label{sec:orga864a0e}
 旅行日付に基づく色分け表示,キーワード検索機能を開発した.
 今後,旅行先の地理的な位置関係を視覚的に把握できるようにする地図の表示,旅行準備の漏れを防ぐための所持品チェックリスト機能や,日程に応じて柔軟に観光訪問順を変更できる入れ替え機能の開発を予定している.
 
