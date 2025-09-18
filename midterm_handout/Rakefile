@@ -56,7 +56,7 @@ EOS
   head.gsub!('STUDENT_ID', @student_id)
   head.gsub!('NAME', @name)
   new_line = [head]
-  lines[32..-1].each do |line|
+  lines[30..-1].each do |line|
     new_line << line
   end
 
