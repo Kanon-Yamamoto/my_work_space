@@ -1,0 +1,35 @@
+\documentclass[12pt,a4]{jreport}
+
+%setting format and calling packages
+%\input{./header/header}
+\input{./header/usepackage}% pieces
+\input{./header/form00_style}% pieces
+\input{./header/tightlist_setting}% pieces
+%参考文献の設定===========================================================
+\renewcommand{\bibname}{参考文献}
+
+%表紙======================================================================
+\input{./cover/cover.tex}
+
+%概要======================================================================
+\input{./abstract/abstract.tex}
+
+%目次======================================================================
+\tableofcontents
+\listoffigures
+\newpage
+
+%本文======================================================================
+\input{./body/body.tex}
+\input{./acknowledge/acknowledge.tex}
+\input{./reference/reference.tex}
+
+%付録======================================================================
+%\renewcommand{\appendix}{}
+%\appendix
+%\renewcommand{\thesection}{付録.}
+\input{./appendix/appendix.tex}
+
+
+\end{document}
+

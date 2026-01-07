@@ -1,0 +1,310 @@
+\begin{appendix}
+
+
+\chapter{コード詳細}
+\label{sec:orgd3861e8}
+
+\section{データベース(DB)設計}
+\label{sec:orgd155f1c}
+今回，開発したWebアプリのデータベース構造を図A.1に示す.
+例えばグループには複数のユーザーが所属し，ユーザーは複数のグループに所属できるという仕様にしたためUserテーブルとGroupテーブルの関係性は多対多になる.
+したがって，中間テーブルとなるGroupUserテーブルを作成した.
+また，ユーザーは複数のメモを作成することができ，
+グループは複数のメモを保持するという仕様にしたためGroupテーブルとUserテーブルと同じ関係性のようにGroupテーブルとUserテーブルの中間テーブルとしてMemoテーブルを作成した.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=10cm]{./fig/app_model.png}
+\caption{WebアプリのDB設計図.}
+\end{figure}
+
+
+\section{グループ関連機能}
+\label{sec:org94ddd7c}
+
+\subsection{グループ作成機能}
+\label{sec:orgf7bb399}
+\begin{verbatim}
+class GroupsController < ApplicationController
+  def create
+    @group = Group.new(group_params)
+    @group.owner_id = current_user.id
+    @groups = current_user.groups
+    if @group.save
+      @group.users << current_user
+      flash[:success] = "You succeeded in creating new group!"
+      redirect_to @group
+    else
+      render "index", status: :unprocessable_entity
+    end
+  end
+
+  private
+    def group_params
+      params.require(:group).permit(:name, :image)
+    end
+end
+\end{verbatim}
+グループを作成するアクションはcreateメソッドで行う.
+group\_paramsメソッドではstrong parameters\cite{strong parameters}を明示している.
+strong parameterとはユーザーがモデルの重要な属性を誤って更新してしまうことを防止するための，より優れたセキュリティ対策のことであり，
+paramsメソッドでフォームから送信された情報を受け取り，requireメソッドでパラメーターの中にモデルに対応するキーが存在するかを確認し存在する場合にそのバリューを返し，
+permitメソッドで保存するパラメーターの許可処理を行う.
+group\_paramsメソッドはGroupsコントローラの内部でのみ実行され，Web経由で外部ユーザーに公開する必要はないため，Rubyのprivateキーワードを使って外部から使えないようにする.
+createアクション内では，@groupというインスタンス変数にフォームから送られてきた内容を元にGroupモデルのインスタンスが生成されたものを代入する.
+そして，内容の保存が成功した場合に，グループの中に作成したユーザーを入れ，フラッシュメッセージを表示し，グループの詳細画面へと遷移する.
+失敗した場合には，エラーメッセージをグループ一覧画面，即ちグループを作成していた画面で表示させる.
+
+\subsection{メンバー招待機能}
+\label{sec:org975c8cb}
+\begin{verbatim}
+class GroupsController < ApplicationController
+  def invite
+    @user = User.find_by(email: params[:group][:email].downcase)
+    @group = Group.find(params[:group_id])
+    @members = @group.users
+    # 招待したメールアドレスがユーザーデータベースに存在すれば招待メールを送信
+    if @user
+      GroupMailer.invite_member(@group, @user).deliver_now
+      flash[:success] = "You succeeded in inviting new member!"
+      redirect_back(fallback_location: group_member_path(@group))
+    else
+      flash.now[:danger] = "Invalid email or Not registered email"
+      render "member", status: :unprocessable_entity
+    end
+  end
+
+  def invite_member(group, user)
+    @group = group
+    @user = user
+    mail(to: @user.email, subject: "Invitation to join the group")
+  end
+end
+\end{verbatim}
+メンバーを招待するアクションはinviteメソッドで行う.
+@userというインスタンス変数にはフォームから送られてきたメールアドレスを小文字に変換したものを代入している.
+そして，そのメールアドレスが登録されているユーザーがデータベースに存在するならば，
+そのユーザーにメールを通してグループ参加の招待メールを送り，存在しなければ，"Invalid email or Not registered email"というエラーメッセージをメンバー一覧画面に表示させる.
+
+
+\subsection{メンバー参加機能}
+\label{sec:orga8cf2b9}
+\begin{verbatim}
+class GroupsController < ApplicationController
+  def join
+    user = User.find(params[:user])
+    reset_session
+    log_in user
+    @group = Group.find(params[:group_id])
+    if @group.users.exclude?(user)
+      @group.users << user
+      flash[:success] = "You succeeded in joing a group!"
+      redirect_to group_path(@group)
+    else
+      redirect_to group_path(@group)
+      flash[:warning] = "You have already joined this group"
+    end
+  end
+
+  def log_in(user)
+    session[:user_id] = user.id
+    session[:session_token] = user.session_token
+  end
+end
+\end{verbatim}
+招待されたメンバーがグループに参加するアクションはjoinメソッドで行う.
+user変数にはメールのリンクから遷移したユーザー情報を格納している.
+そして，Rails標準メソッドであるreset\_sessionを用いてセッション情報を一度削除してからlog\_inメソッドを用いて新たなセッション情報を生成する.
+条件分岐ではグループ内にメールのリンクから遷移したユーザーが含まれていない場合には新たにグループ内にユーザーを追加するようにし，
+含まれている場合にはグループの詳細画面に遷移し，"You have already joined this group"というフラッシュメッセージを表示させる.
+
+
+\section{メモ関連機能}
+\label{sec:org33777e2}
+\subsection{コメント機能}
+\label{sec:org2aff93d}
+あるグループメンバーがメモを生成した後に補足情報を追加したい時，
+あるいは他のグループメンバーがそのメモに対して意見や質問をする際，再度メモを生成するのは利用するグループメンバーの負担が大きくなってしまうリスクがある.
+そこで，コメント機能を実装することによって，スムーズな情報共有が可能になり，結果としてアプリからユーザー離れが起こりづらくなる.
+\begin{verbatim}
+class MemoCommentsController < ApplicationController
+  before_action :correct_memo_comment_user, only: [:destroy]
+
+  def create
+    @memo = Memo.find(params[:memo_id])
+    @group = Group.find(params[:group_id])
+    @comment = current_user.memo_comments.new(memo_comment_params)
+    @comment.memo_id = @memo.id
+    if @comment.save
+      # ポストに関わった人たち全員にメールで通知をする
+      NotificationMailer.comment_notification(@memo, @comment, @group).deliver_now
+      flash[:success] = "You succeeded in creating new comment!"
+      redirect_to group_memo_path(@group, @memo)
+    else
+      @memo_comment = @comment
+      render "memos/show", status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    MemoComment.find(params[:id]).destroy
+    flash[:success] = "comment deleted"
+    redirect_to group_memo_path(params[:group_id], params[:memo_id]),
+    status: :see_other
+  end
+
+
+  private
+    def memo_comment_params
+      params.require(:memo_comment).permit(:comment)
+    end
+
+    def correct_memo_comment_user
+      redirect_to(root_url, status: :see_other) unless
+      MemoComment.find(params[:id]).user == current_user
+    end
+end
+\end{verbatim}
+コメントを作成するアクションはcreateメソッドで行う.
+memo\_comment\_paramsメソッドではgroup\_params同様にstrong parametersを明示している.
+createアクション内では，@commentというインスタンス変数にフォームから送られてきた内容を元に現在ログインしているユーザーが新規コメントを生成したものを代入する.
+そして，コメントの保存が成功した場合に，メモに関わったグループメンバー全員にコメント内容の通知が送信されるようにしている.失敗した場合には，エラーメッセージをメモの詳細画面で表示させる.
+
+\begin{verbatim}
+class NotificationMailer < ApplicationMailer
+  def comment_notification(memo, comment, group)
+    @memo = memo
+    @comment = comment
+    @group = group
+    array_email = []
+    @memo.memo_comments.each do |memo_comment|
+      array_email.append(memo_comment.user.email)
+    end
+  array_email.append(@memo.user.email)
+    mail bcc: array_email, subject: "#{@comment.comment} from #{@comment.user.name}"
+  end
+end
+\end{verbatim}
+上記のように，Railsに標準搭載されているAction Mailerを使用すると，アプリケーションのメーラークラスやビューで電子メールを送信できる.
+引数として受け取ったメモとコメント，グループをそれぞれインスタンス変数に格納する.
+そして，メモに紐付けられているコメントユーザー全員のメールアドレスとメモを作成したグループユーザーのメールアドレスをarray\_email配列に代入する.
+最後に，複数のグループユーザーあてに電子メールを同時送信する際，
+受取人以外の送信先メールアドレスを伏せて送信することができるブラインドカーボンコピー(bcc)を利用して配列array\_emailに格納されたメールアドレス宛に電子メールを送信する.
+
+
+\section{検索機能}
+\label{sec:org80ef0cf}
+
+\subsection{時間軸検索}
+\label{sec:org17913ae}
+時間軸検索とは「超」整理法と呼ばれる新たな整理法の一種である.
+従来の整理法では，データや書類の内容から分類する「図書館方式」が一般的であった.
+つまり，整理とは分類であるという考えが古くから定着されている.
+しかし，従来の整理法にはいくつか問題が生じる.
+\begin{enumerate}
+\item どの分類項目に入れて良いか分からない問題
+\item その他問題
+\end{enumerate}
+まず1.については，対象となるデータが，複数の内容または属性を持っている場合に，どの分類項目に入れて良いか分からなくなる.
+例として，pdfの資料をグループ全体に共有しようとした際に，pdfという項目に入れるのか，そのpdf資料の内容に関する項目に入れるのかという問題が生じてしまう.
+個人的にデータを管理するのならば，図書館方式でも良いかもしれないが，グループとしてデータを管理していくのならば，グループ1人1人が共通の分類法を身につけなければならない.
+これは非常に危険であり，非効率である.
+次に2.についてはデータはどの分類項目に入らないものもある.
+この場合には，「その他」などといった分類項目に残しておくというのが，ごく常識的な対処であろう.
+しかし，これこそが最大の陥穽なのであり，「その他」はハードルが低く便利な分類項目だから，どんどんデータが入ってくる.
+その結果，とどまるところをしらず膨れ上がり，収拾がつかなくなる.
+また，データを分類した瞬間は正しい項目に入れておいたか覚えていたとしても，時間が経過すればどの項目に入れてしまったか忘れてしまうこともある.
+使用頻度が低いデータは特にそうである.
+そこで時間軸による検索は，極めて有効的である.
+理由として以下の2点が挙げられる.
+\begin{enumerate}
+\item 使用する書類，データの大部分は，最近使ったものの再使用である.
+\item 人間の記憶は，時間順に関しては強い.
+\end{enumerate}
+
+
+\subsection{タグ検索}
+\label{sec:org8c51273}
+タグ検索は日付キーを忘れて時間軸検索ができない場合に用いることを想定する.
+図のように共有されたデータ一覧画面の検索欄からタグとなる単語を入力し該当するタグに紐付けられたデータを絞り込むことができる.
+また，1つ1つの投稿データのタグリンクをクリックすることによっても検索することができる.
+さらに動画のリンクや音声・画像ファイル共有した場合にはそれらの内容の特徴を表したタグを付けておくことによってデータの検索を容易にすることもできる.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=12cm]{./fig/tagging.png}
+\caption{タグでデータを絞り込む一連の動作.}
+\end{figure}
+
+
+\subsection{キーワード検索}
+\label{sec:org0fbfb4e}
+キーワード検索はタグ付けがされていないメモ，タグを忘れてしまったメモを検索する場合に用いることを想定する.
+タグ検索と同様データ一覧画面の検索欄からメモのタイトルを入力し単語がヒットすれば該当するデータを絞り込むことができる.
+\begin{verbatim}
+class GroupsController < ApplicationController
+  def show
+    @group = Group.find(params[:id])
+    @memo = @group.memos.new
+    @pagy, @memos = pagy(@group.memos.order(updated_at: :desc).limit(20))
+    if params[:key_word]
+      @pagy, @memos = pagy(@memos.where("title LIKE ?", "%#{params[:key_word]}%"))
+      unless @memos.present?
+	@pagy, @memos = pagy(@group.memos.tagged_with(params[:key_word]))
+      end
+    end
+  end
+end
+\end{verbatim}
+key\_wordというパラメータを受け取った時にのみ，
+Railsの検索用メソッドであるwhereとlike句を用いて受け取ったパラメータからタイトルにヒットするデータを絞り込み@memosというインスタンス変数に格納する.
+その後，@memosの中身が存在するかどうかをpresentメソッドで判定し，存在しなければ受け取ったパラメータからタグ検索をする.
+
+\section{アーカイブ機能}
+\label{sec:orgc278979}
+\begin{verbatim}
+lib/tasks/create_archive.rake
+namespace :create_archive do
+  desc "アーカイブの定期実行プログラム"
+  task add_archive: :environment do
+    Group.all.each do |group|
+      group.memos.each do |memo|
+	if memo.accessed_at == nil ||
+	(memo.accessed_at < 2.weeks.ago && memo.key == false)
+	  archive = group.archives.new(
+				       title: memo.title,
+				       description: memo.description,
+				       user_id: memo.user_id,
+				       group_id: memo.group_id,
+				       memo_date: memo.memo_date,
+				       memo_file: memo.memo_file
+				      )
+	  archive.tag_list << memo.tag_list
+	  archive.save
+	  memo.destroy
+	end
+      end
+    end
+  end
+end
+\end{verbatim}
+グループのメモ1件1件に対してアクセスされた日時を表すaccessed\_atがnilまたは2週間以上経過しており，keyカラムがfalseの場合に新たにArchiveインスタンスを生成し，保存する.
+そして，アーカイブに移動することになったメモは削除される.
+これにより，アクティブなデータとアーカイブデータを分離することが可能になる.これを毎日0時に定期実行されるようにバッチ処理として組み込む.
+
+
+\section{通知機能}
+\label{sec:org5ea944b}
+\begin{verbatim}
+class NotificationMailer < ApplicationMailer
+  def notification_for_member(notification, group)
+    @notification = notification
+    @group = group
+    mail bcc: @group.users.pluck(:email),
+    subject: "#{@notification.title} from #{@notification.user.name}"
+  end
+end
+\end{verbatim}
+上記のように，Railsに標準搭載されているAction Mailerを使用すると，アプリケーションのメーラークラスやビューで電子メールを送信できる.
+引数として受け取ったメモとグループをそれぞれインスタンス変数に格納する.
+そして，複数のグループユーザーあてに電子メールを同時送信する際，受取人以外の送信先メールアドレスを伏せて送信することができるブラインドカーボンコピー(bcc)を利用して電子メールを送信する.
+
+\end{appendix}

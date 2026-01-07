@@ -1,0 +1,51 @@
+#+OPTIONS: ^:{}
+#+STARTUP: indent nolineimages overview num
+#+TITLE: template for org-file
+#+AUTHOR: Shigeto R. Nishitani
+#+EMAIL:     (concat "shigeto_nishitani@mac.com")
+#+LANGUAGE:  jp
+#+OPTIONS:   H:4 toc:t num:2
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+
+* link
+- 
+[[https://kwansei-gakuin.zoom.us/j/96919760597?pwd=dURyMklGQXRNTEdIaGRZMTc3d2F2UT09]zoom]]
+  - ミーティング ID: 969 1976 0597
+  - パスコード: 421095
+-[[https://kwansei-gakuin.zoom.us/j/96919760597?pwd=dURyMklGQXRNTEdIaGRZMTc3d2F2UT09#success][zoom]]
+- [[https://kwanseio365-my.sharepoint.com/:f:/g/personal/cru32369_nuc_kwansei_ac_jp/EtN79dSsjHJKs6FD2drXffoBOwIK39uj5UGwtbL4WDnTjg?e=eAVKhE][ゼミの動画置き場]]
+#+begin_src
+- [[url][name]]
+#+end_src
+
+- c-x x-f #find file
+- ~/.emacs.d/init.el # emacsの初期設定ファイルinitiation configuration
+- [[https://qiita.com/tadsan/items/8c66e7d753a1b24acd4e][WSL2のEmacsからWindows側のブラウザを開く]]
+- c-c c-o #open link
+
+* w6<2025-04-16 Wed>
+-recursive 再帰的
+* w5 <2025-04-09 Wed>
+-CPU -><- メモリ(内部記憶) -><- HD(外部記憶)
+-rm file_path (remove)
+-cp file_path (copy)
+* w4 <2025-03-26 Wed>
+- c-c . -7 # date
+- mkdir bin
+- cp file_path bin
+- mv file_path bin
+- c-k c-y #kill line, yank(paste)
+* w3 <2025-03-19 Wed>
+* W2
+* w1
+history | head -10
+history
+history -R | head -10
+history -R | head 10
+git push origin main
+git remote add origin git@github.com:Kanon-Yamamoto/my_work_space.git
+git branch -M main
+git commit -m 'first commit'
+git add -A
+ls -lat
