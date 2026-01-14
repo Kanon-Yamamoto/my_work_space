@@ -90,7 +90,7 @@ end
 
 def convert_main(lines)
   new_line = []
-  lines[31..-1].each do |line|
+  lines[30..-1].each do |line|
     new_line << line
   end
 
