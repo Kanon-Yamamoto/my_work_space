@@ -1,9 +1,7 @@
+\tableofcontents
+
 \chapter{序論}
-<<<<<<< HEAD
-\label{sec:orgd2b1b9d}
-=======
-\label{sec:org1f43335}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:orgb1b2d88}
 修学旅行などのイベントでは,参加者に対して事前にしおりが配布されることが多い.
 しおりは旅程の把握や所持品の確認,集合時間の共有などを目的とした重要な情報媒体であり,
 旅行の準備や当日の行動において欠かせない役割を果たしている.
@@ -15,27 +13,21 @@
 
 2つ目は,地図表示機能がないため,目的地の位置関係や全体像を視覚的に理解することが難しく,利用者は外部ツールや手作業で補完しなければならない.
 
+3つ目は, 移動時間の自動算出機能が存在しないため, 各目的地間の所要時間をユーザー自身が都度手動で調べる必要がある点である. これにより, 旅行全体のスケジュールを立てる際に手間がかかり, 計画の精度や効率性が低下する可能性がある.
+
 これらの課題は,旅行計画の際にユーザーにとって大きな障壁となっており,情報の整理や視覚的な理解の低下が考えられる.
 そこで本研究では,視覚的な理解と効率的に旅行計画を行える「デジタル版しおり」として機能する旅行アプリの開発を目指す.
+
 \chapter{手法}
-<<<<<<< HEAD
-\label{sec:org73cd413}
+\label{sec:orgbbae895}
 \section{開発手法}
-\label{sec:org9395942}
-=======
-\label{sec:orgaa759fa}
-\section{開発手法}
-\label{sec:org5497244}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:org0b37ab7}
 本研究では,限られた開発期間内で効率的に成果を上げるために,機能ごとに優先順位を設定し,それぞれについて計画・設計・実装・テストの工程を小刻みに繰り返す手法を採用した.
 各段階で得られた知見や, 研究室内のメンバーからのフィードバックをもとに, 仕様やUIの見直しを行いながら, 柔軟に改善を重ねた.
 これにより, 利用者の視点を反映した機能の追加や調整が可能となり, アプリケーションの完成度と実用性を段階的に高めることができた.
+
 \subsection{Dango}
-<<<<<<< HEAD
-\label{sec:orgd290712}
-=======
-\label{sec:orgfe28047}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:org744c7cb}
 開発環境として,Pythonで実装されたサーバーサイドWebアプリケーションフレームワークであるDjangoを選定した[2]．Djangoを選定した理由は以下の3つである．
 
 1つ目は,ユーザー認証や管理画面,データベース操作などの機能が初期状態で組み込まれており,追加設定を行わずとも迅速に開発を開始できる点である．これにより,開発初期の環境構築にかかる時間を大幅に削減することが可能となった．
@@ -46,20 +38,13 @@
 そのため,開発者が個別にセキュリティ機能を実装する必要がなく,安全性の高いWebアプリケーションを効率的に構築することができた．
 
 また,実装にはPython, HTML, JavaScript, CSSを使用し,UIライブラリとしてはBootstrapを採用した．開発にあたってはCopilot[3]を参照しながら,開発を行った．
+
 \subsection{Heroku}
-<<<<<<< HEAD
-\label{sec:org9f43aba}
+\label{sec:org2758442}
 \chapter{結果と考察}
-\label{sec:org4f156a4}
+\label{sec:org9b045aa}
 \section{アプリ機能}
-\label{sec:orgd099d61}
-=======
-\label{sec:org3f1d908}
-\chapter{結果と考察}
-\label{sec:orgc6e2b08}
-\section{アプリ機能}
-\label{sec:orgc157f6d}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:orgd435e8a}
 今回，開発したアプリでは大きく分けて5つの機能を実装した．
 それぞれの機能は図3.1の通りである．
 \begin{figure}[htbp]
@@ -67,12 +52,9 @@
 \includegraphics[width=15cm]{./fig/app.png}
 \caption{アプリ機能一覧.}
 \end{figure}
+
 \subsection{アカウント機能}
-<<<<<<< HEAD
-\label{sec:orgc31e16e}
-=======
-\label{sec:org82420d2}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:orgcc5259d}
 本アプリケーションでは,ユーザー認証機能としてログイン機能と新規登録機能を実装した.
 
 ログイン画面では,登録済みのユーザーがユーザー名とパスワードを入力することで,個別の旅行プランやチェックリストにアクセスできるようになっている.
@@ -99,11 +81,7 @@
 
 \newpage
 \subsection{共有機能}
-<<<<<<< HEAD
-\label{sec:orge6b28bb}
-=======
-\label{sec:org4c2c70a}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:org34067ae}
 本アプリでは,ユーザーが作成した旅行計画を他者と共有するためのリンク生成機能を実装した.
 この機能により,ユーザーはパスワード付きの専用URLを発行し,家族や友人と旅行情報を安全かつ手軽に共有できる.
 共有リンクの作成時には,ユーザーがあらかじめ用意された選択肢から有効期間を選択できるように設計しており,
@@ -113,12 +91,9 @@
 \includegraphics[width=12cm]{./fig/share.png}
 \caption{リンク作成画面.}
 \end{figure}
+
 \subsection{旅行作成画面}
-<<<<<<< HEAD
-\label{sec:orgfa8f389}
-=======
-\label{sec:orgd5747e1}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:org279cc55}
 旅行作成画面は，本アプリケーションにおける起点となる機能であり，ユーザーが旅行の基本情報を登録するための欠かせないインターフェースである．
 この画面を通じて入力された情報は，以降のスケジュール管理や地図表示，チェックリスト生成など，他の機能と密接に連携する基盤となる．
 \begin{figure}[htbp]
@@ -126,12 +101,9 @@
 \includegraphics[width=12cm]{./fig/new_trip.png}
 \caption{旅行作成画面.}
 \end{figure}
+
 \subsection{旅程の視覚化管理}
-<<<<<<< HEAD
-\label{sec:org5981789}
-=======
-\label{sec:org978f128}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:org7dd816e}
 ユーザーが旅行の全体像や日程ごとの計画を直感的に把握できるよう,複数の視覚化機能を実装した.
 
 まず,登録された旅行期間に基づいて,各旅行を「予定」「旅行中」「終了」「未定」の4つのステータスに分類し,色分けによって一覧画面上に表示する機能を実装した.
@@ -162,12 +134,9 @@
 
 これらの機能により,ユーザーは旅行の計画段階において,旅程を効率的に把握・調整できるようになり、
 直感的な旅行プランニングが可能となった.
+
 \subsection{旅程の編集・調節機能}
-<<<<<<< HEAD
-\label{sec:org44cb7e8}
-=======
-\label{sec:org244a838}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:orgd452fca}
 旅行の計画を柔軟に調整できるよう,旅程編集に関する2つの機能を実装した.
 
 まず,観光場所の訪問順序をドラッグすることで自由に入れ替える機能を導入した.
@@ -183,12 +152,10 @@
 \end{figure}
 
 これらの機能は,旅行の編集・調節を支援する上で不可欠な要素であり,ユーザーが旅程全体の流れを把握しながら,日程ごとの詳細な計画を直感的に調整できる環境を提供している.
+
+
 \subsection{検索機能}
-<<<<<<< HEAD
-\label{sec:org8692e6f}
-=======
-\label{sec:org0552f0c}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:org1fc2cf8}
 旅行情報の登録・閲覧・編集を効率的かつ直感的に行えるよう,2つの検索機能を実装した.
 
 旅行一覧画面に多くの旅行が表示されている場合,目的の旅行を探し出すのに時間がかかることがある.
@@ -210,12 +177,10 @@
 \includegraphics[width=12cm]{./fig/search_place.png}
 \caption{施設名の入力画面.}
 \end{figure}
+
+
 \subsection{チェックリスト機能}
-<<<<<<< HEAD
-\label{sec:org87fb9dc}
-=======
-\label{sec:orgc30d36e}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:orgcecfdae}
 旅行準備を効率的に進められるよう,チェックリストに関する複数の機能を実装した.
 まず,旅行ごとに標準のチェックリスト設定を適用できる機能を導入した.
 これにより,ユーザーは毎回ゼロからリストを作成する必要がなく,あらかじめ用意された基本項目をもとに効率よく準備を開始できるようになった.
@@ -239,18 +204,16 @@
 さらに,各項目のチェック状況を保持する機能を実装し,ユーザーが確認済みの持ち物を記録できるようにした.
 これにより,準備の進捗状況を可視化しながら,持ち物の確認状況を一目で把握できるようになり,確認漏れや二重確認の負担を軽減することが可能となった.
 チェックの状態は旅行ごとに保存されるため,複数の旅行を並行して準備する場合でも, 各旅程の進捗を個別に管理できる.
- \begin{center}
+ \begin{figure}[htbp]
+\centering
 \includegraphics[width=10cm]{./fig/checklist_maintenance.png}
 \caption{チェックリストの管理画面.}
-\end{center}
+\end{figure}
 これらの機能は,旅行前の準備を支援する上で重要な役割を果たしており,ユーザーが安心して出発できるよう,
 実用性と柔軟性を兼ね備えたチェックリスト管理環境を提供している.
+
 \chapter{まとめ}
-<<<<<<< HEAD
-\label{sec:org1061026}
-=======
-\label{sec:org6b1ea63}
->>>>>>> ada4905 (check abstract and caption)
+\label{sec:org935d876}
 
 本研究では，pythonで書かれたサーバー側WebアプリケーションフレームワークであるDjangoを開発環境として，
 視覚的な理解と効率的に旅行計画を行えるデジタル版しおりを開発した．
