@@ -10,6 +10,6 @@
 \contentsline {subsection}{\numberline {3.1.4}旅程の視覚化管理}{13}{subsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.1.5}UI設計とスタイルの工夫}{14}{subsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.1.6}旅程の編集・調節機能}{15}{subsection.3.1.6}%
-\contentsline {subsection}{\numberline {3.1.7}検索機能}{16}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.7}検索機能}{17}{subsection.3.1.7}%
 \contentsline {subsection}{\numberline {3.1.8}チェックリスト機能}{18}{subsection.3.1.8}%
-\contentsline {chapter}{\numberline {第4章}まとめ}{20}{chapter.4}%
+\contentsline {chapter}{\numberline {第4章}まとめ}{21}{chapter.4}%
