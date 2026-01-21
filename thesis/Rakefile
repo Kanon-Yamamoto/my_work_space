@@ -31,7 +31,7 @@ task :mkpdf do
               "bibtex #{pdf_file}/#{pdf_file}.tex",
               "platex #{pdf_file}/#{pdf_file}.tex",
               "dvipdfmx thesis.dvi",
-              "rake rmfile",
+              #"rake rmfile",
               "open thesis.pdf"]
   commands.each { |com| system com }
 end
