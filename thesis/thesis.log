@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  23 JAN 2026 16:37
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  27 JAN 2026 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -568,126 +568,86 @@ File: ./fig/registration.png Graphic file (type bmp)
 ]
 File: ./fig/logout.png Graphic file (type bmp)
 <./fig/logout.png>
-
-
-[8]
-File: ./fig/share.png Graphic file (type bmp)
-<./fig/share.png>
-File: ./fig/link.png Graphic file (type bmp)
-<./fig/link.png>
-
-
-[9]
-File: ./fig/share_tokyo.png Graphic file (type bmp)
-<./fig/share_tokyo.png>
-File: ./fig/wrong.png Graphic file (type bmp)
-<./fig/wrong.png>
-
-
-[10]
-File: ./fig/tokyo.png Graphic file (type bmp)
-<./fig/tokyo.png>
 File: ./fig/new_trip.png Graphic file (type bmp)
 <./fig/new_trip.png>
 
 
-[11]
+[8]
 File: ./fig/travel.png Graphic file (type bmp)
 <./fig/travel.png>
+
+
+[9]
 File: ./fig/search_results.png Graphic file (type bmp)
 <./fig/search_results.png>
 
 
-[12]
-
-[13]
+[10]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-88.
+39.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
 
-Overfull \hbox (113.99785pt too wide) in paragraph at lines 187--189
-[]\OT1/cmr/m/n/12 // \JY1/mc/m/n/12 ここが \OT1/cmr/m/n/12 PDF \JY1/mc/m/n/12 
-上でち ゃ んと表示されない\OT1/cmr/m/n/12 <script src="[][][][]=\OMS/cmsy/m/n/1
-2 ff
+Overfull \hbox (14.47548pt too wide) in paragraph at lines 139--140
+[]\OT1/cmr/m/n/12 <script src="[][][][]=\OMS/cmsy/m/n/12 ff \OT1/cmr/m/n/12 goo
+gle[]maps[]api[]key
  []
 
 File: ./fig/initMap.png Graphic file (type bmp)
 <./fig/initMap.png>
+
+
+[11]
 File: ./fig/map.png Graphic file (type bmp)
 <./fig/map.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 206--207
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 157--158
  [][] 
  []
 
-
-
-[14]
 File: ./fig/focus_on_date.png Graphic file (type bmp)
 <./fig/focus_on_date.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 214--215
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 165--166
  [][] 
  []
 
+
+
+[12]
 File: ./fig/onStart.png Graphic file (type bmp)
 <./fig/onStart.png>
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 239--240
- [][] 
- []
-
-
-
-[15]
 File: ./fig/onEnd.png Graphic file (type bmp)
 <./fig/onEnd.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 245--246
- [][] 
- []
 
+[13]
 File: ./fig/updateOrderNumbers.png Graphic file (type bmp)
 <./fig/updateOrderNumbers.png>
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 252--253
- [][] 
- []
-
 File: ./fig/updatePlaceOrder.png Graphic file (type bmp)
 <./fig/updatePlaceOrder.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 261--262
- [][] 
- []
 
+[14]
+
+[15]
+File: ./fig/car.png Graphic file (type bmp)
+<./fig/car.png>
 
 
 [16]
-
-[17]
-
-[18]
-
-[19]
-File: ./fig/car.png Graphic file (type bmp)
-<./fig/car.png>
 File: ./fig/search_place.png Graphic file (type bmp)
 <./fig/search_place.png>
-
-
-[20]
 File: ./fig/checklist_setting.png Graphic file (type bmp)
 <./fig/checklist_setting.png>
-
-
-[21]
 File: ./fig/receive.png Graphic file (type bmp)
 <./fig/receive.png>
+
+
+[17]
 File: ./fig/created.png Graphic file (type bmp)
 <./fig/created.png>
 File: ./fig/items.png Graphic file (type bmp)
@@ -696,32 +656,49 @@ File: ./fig/user_items.png Graphic file (type bmp)
 <./fig/user_items.png>
 
 
-[22]
+[18]
 File: ./fig/add_checklist.png Graphic file (type bmp)
 <./fig/add_checklist.png>
 File: ./fig/checklist_maintenance.png Graphic file (type bmp)
 <./fig/checklist_maintenance.png>
 
 
-[23]
+[19]
+
+[20]
+File: ./fig/share.png Graphic file (type bmp)
+<./fig/share.png>
+File: ./fig/link.png Graphic file (type bmp)
+<./fig/link.png>
+File: ./fig/share_tokyo.png Graphic file (type bmp)
+<./fig/share_tokyo.png>
+
+
+[21]
+
+[22]
+File: ./fig/tokyo.png Graphic file (type bmp)
+<./fig/tokyo.png>
 File: ./fig/css.png Graphic file (type bmp)
 <./fig/css.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 422--423
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 416--417
+ [][] 
+ []
+
+
+
+[23]
+File: ./fig/drag.png Graphic file (type bmp)
+<./fig/drag.png>
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 429--430
  [][] 
  []
 
 
 
 [24]
-File: ./fig/drag.png Graphic file (type bmp)
-<./fig/drag.png>
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 439--440
- [][] 
- []
-
-
 
 [25]
 第 4 章
@@ -766,12 +743,12 @@ L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12856 strings out of 468460
- 205836 string characters out of 5447603
- 612743 words of memory out of 5000000
- 41247 multiletter control sequences out of 15000+600000
+ 12850 strings out of 468460
+ 205714 string characters out of 5447603
+ 612742 words of memory out of 5000000
+ 41242 multiletter control sequences out of 15000+600000
  646095 words of font info for 119 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  87i,6n,96p,1238b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (31 pages, 91044 bytes).
+Output written on thesis.dvi (31 pages, 90256 bytes).
