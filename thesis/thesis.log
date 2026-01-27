@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  27 JAN 2026 14:10
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  27 JAN 2026 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -622,11 +622,11 @@ File: ./fig/onStart.png Graphic file (type bmp)
 <./fig/onStart.png>
 File: ./fig/onEnd.png Graphic file (type bmp)
 <./fig/onEnd.png>
+File: ./fig/updateOrderNumbers.png Graphic file (type bmp)
+<./fig/updateOrderNumbers.png>
 
 
 [13]
-File: ./fig/updateOrderNumbers.png Graphic file (type bmp)
-<./fig/updateOrderNumbers.png>
 File: ./fig/updatePlaceOrder.png Graphic file (type bmp)
 <./fig/updatePlaceOrder.png>
 
@@ -643,20 +643,20 @@ File: ./fig/search_place.png Graphic file (type bmp)
 <./fig/search_place.png>
 File: ./fig/checklist_setting.png Graphic file (type bmp)
 <./fig/checklist_setting.png>
-File: ./fig/receive.png Graphic file (type bmp)
-<./fig/receive.png>
 
 
 [17]
+File: ./fig/receive.png Graphic file (type bmp)
+<./fig/receive.png>
 File: ./fig/created.png Graphic file (type bmp)
 <./fig/created.png>
 File: ./fig/items.png Graphic file (type bmp)
 <./fig/items.png>
-File: ./fig/user_items.png Graphic file (type bmp)
-<./fig/user_items.png>
 
 
 [18]
+File: ./fig/user_items.png Graphic file (type bmp)
+<./fig/user_items.png>
 File: ./fig/add_checklist.png Graphic file (type bmp)
 <./fig/add_checklist.png>
 File: ./fig/checklist_maintenance.png Graphic file (type bmp)
@@ -666,6 +666,8 @@ File: ./fig/checklist_maintenance.png Graphic file (type bmp)
 [19]
 
 [20]
+
+[21]
 File: ./fig/share.png Graphic file (type bmp)
 <./fig/share.png>
 File: ./fig/link.png Graphic file (type bmp)
@@ -674,41 +676,41 @@ File: ./fig/share_tokyo.png Graphic file (type bmp)
 <./fig/share_tokyo.png>
 
 
-[21]
-
 [22]
+
+[23]
 File: ./fig/tokyo.png Graphic file (type bmp)
 <./fig/tokyo.png>
 File: ./fig/css.png Graphic file (type bmp)
 <./fig/css.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 416--417
- [][] 
- []
-
-
-
-[23]
-File: ./fig/drag.png Graphic file (type bmp)
-<./fig/drag.png>
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 429--430
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 420--421
  [][] 
  []
 
 
 
 [24]
+File: ./fig/drag.png Graphic file (type bmp)
+<./fig/drag.png>
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 433--434
+ [][] 
+ []
+
+
 
 [25]
+
+[26]
 第 4 章
 ) (./acknowledge/acknowledge.tex
 
-[26
+[27
 
 ]) (./reference/reference.tex
 
-[27
+[28
 
 ]
 Overfull \hbox (77.30614pt too wide) in paragraph at lines 6--7
@@ -716,13 +718,13 @@ Overfull \hbox (77.30614pt too wide) in paragraph at lines 6--7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 []\OT1/cmr/m/n/10.95 Bootstrap - [][][][]
  []
 
 ) (./appendix/appendix.tex
 
-[28
+[29
 
 ] (./thesis.toc)
 \tf@toc=\write7
@@ -733,7 +735,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 \BKM@file=\write8
 \openout8 = `thesis.out.ps'.
 
-[29
+[30
 
 ] (./thesis.aux)
  ***********
@@ -751,4 +753,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  87i,6n,96p,1238b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (31 pages, 90256 bytes).
+Output written on thesis.dvi (32 pages, 91112 bytes).
