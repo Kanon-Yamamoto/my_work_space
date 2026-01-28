@@ -127,8 +127,17 @@ keyパラメータにGoogle Maps APIの利用に必要なAPIキーを指定し�
 Google Maps APIが読み込まれると,コールバック関数として指定されたinitMap()関数が自動的に実行される.
 
 initMap()では以下の処理が行われている.
- #+attr_latex: :width 12cm
- file:./fig/initMap.png
+# #+attr_latex: :width 12cm
+#  file:./fig/initMap.png
+#+begin_src python
+  funciont initMap(){
+      const defaultLoaction = {lat:}
+      map = new google.mapls.Map(document.ge
+                zoom: 5,
+                cneter: defaulLocation
+                                 });
+  }
+#+end_src
 
 この関数では,google.maps.Mapコンストラクタを用いて地図オブジェクトを生成している.
 初期表示位置として日本の中央付近を設定し,ズームレベルは5（日本全土が見渡せる広域表示）としている.
