@@ -164,7 +164,7 @@ CDNとは,インターネット上に分散配置されたサーバー群から,
  #+attr_latex: :width 10cm
  file:./fig/onStart.png
 
-ドラッグ開始時には,以下の処理を実行する.
+ドラッグ終了時には,以下の処理を実行する.
  #+CAPTION:
  #+attr_latex: :width 10cm
  file:./fig/onEnd.png
