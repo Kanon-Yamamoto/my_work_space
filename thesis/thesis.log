@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  30 JAN 2026 13:52
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  30 JAN 2026 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -453,7 +453,11 @@ File: l3backend-dvips.def 2025-06-09 L3 backend support: dvips
 LaTeX Warning: Unused global option(s):
     [a4].
 
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `Django' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -544,9 +548,9 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
 
 
 [5
@@ -557,6 +561,8 @@ File: ./fig/MTV.png Graphic file (type bmp)
 
 
 [6]
+
+[7]
 第 3 章
 File: ./fig/app.png Graphic file (type bmp)
 <./fig/app.png>
@@ -566,7 +572,7 @@ File: ./fig/registration.png Graphic file (type bmp)
 <./fig/registration.png>
 
 
-[7
+[8
 
 ]
 File: ./fig/logout.png Graphic file (type bmp)
@@ -575,104 +581,103 @@ File: ./fig/new_trip.png Graphic file (type bmp)
 <./fig/new_trip.png>
 
 
-[8]
+[9]
 File: ./fig/travel.png Graphic file (type bmp)
 <./fig/travel.png>
 
 
-[9]
+[10]
 File: ./fig/search_results.png Graphic file (type bmp)
 <./fig/search_results.png>
 
 
-[10]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-48.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
-
-Overfull \hbox (14.47548pt too wide) in paragraph at lines 148--149
-[]\OT1/cmr/m/n/12 <script src="[][][][]=\OMS/cmsy/m/n/12 ff \OT1/cmr/m/n/12 goo
-gle[]maps[]api[]key
+[11]
+Overfull \hbox (298.10628pt too wide) in paragraph at lines 146--146
+[]\OT1/cmtt/m/n/12 <script src="https://maps.googleapis.com/maps/api/js?key={{ 
+google_maps_api_key }}&callback=initMap" async defer></script>[] 
  []
 
 
 
-[11]
+[12]
 File: ./fig/map.png Graphic file (type bmp)
 <./fig/map.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 174--175
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 171--172
  [][] 
  []
 
 File: ./fig/focus_on_date.png Graphic file (type bmp)
 <./fig/focus_on_date.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 182--183
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 179--180
  [][] 
  []
 
 
 
-[12]
-
 [13]
-Overfull \hbox (186.95622pt too wide) in paragraph at lines 218--218
+
+[14]
+Overfull \hbox (186.95622pt too wide) in paragraph at lines 215--215
 []       \OT1/cmtt/m/n/12 const durationElements = activeTabPane ? activeTabPan
 e.querySelectorAll('.travel-duration') : [];[] 
  []
 
 
-Overfull \hbox (38.75615pt too wide) in paragraph at lines 243--243
+Overfull \hbox (38.75615pt too wide) in paragraph at lines 240--240
 []  \OT1/cmtt/m/n/12 console.log('Drag ended, oldIndex:', evt.oldIndex, 'newInd
 ex:', evt.newIndex);[] 
  []
 
 
-Overfull \hbox (156.0812pt too wide) in paragraph at lines 243--243
+Overfull \hbox (156.0812pt too wide) in paragraph at lines 240--240
 []  \OT1/cmtt/m/n/12 const durationElements = activeTabPane ? activeTabPane.que
 rySelectorAll('.travel-duration') : [];[] 
  []
 
 
 
-[14]
-Overfull \hbox (63.45616pt too wide) in paragraph at lines 288--288
+[15]
+Overfull \hbox (63.45616pt too wide) in paragraph at lines 285--285
 []    \OT1/cmtt/m/n/12 const sortableContainers = document.querySelectorAll('[i
 d^="sortable-places"]');[] 
  []
 
 
-Overfull \hbox (88.15617pt too wide) in paragraph at lines 288--288
+Overfull \hbox (88.15617pt too wide) in paragraph at lines 285--285
 []    \OT1/cmtt/m/n/12 const items = activeTabPane ? activeTabPane.querySelecto
 rAll('.sortable-item') : [];[] 
  []
 
 
 
-[15]
-Overfull \hbox (44.93115pt too wide) in paragraph at lines 288--288
+[16]
+Overfull \hbox (44.93115pt too wide) in paragraph at lines 285--285
 [] \OT1/cmtt/m/n/12 console.log(`Item ${index}: placeId=${placeId}, day=${day},
  newOrder=${order}`);[] 
  []
 
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+99.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 299.
 
 
-[16]
+[17]
 File: ./fig/car.png Graphic file (type bmp)
 <./fig/car.png>
 
 
-[17]
+[18]
 File: ./fig/search_place.png Graphic file (type bmp)
 <./fig/search_place.png>
 
 
-[18]
+[19]
 File: ./fig/checklist_setting.png Graphic file (type bmp)
 <./fig/checklist_setting.png>
 File: ./fig/receive.png Graphic file (type bmp)
@@ -683,7 +688,7 @@ File: ./fig/items.png Graphic file (type bmp)
 <./fig/items.png>
 
 
-[19]
+[20]
 File: ./fig/user_items.png Graphic file (type bmp)
 <./fig/user_items.png>
 File: ./fig/add_checklist.png Graphic file (type bmp)
@@ -692,9 +697,9 @@ File: ./fig/checklist_maintenance.png Graphic file (type bmp)
 <./fig/checklist_maintenance.png>
 
 
-[20]
-
 [21]
+
+[22]
 File: ./fig/share.png Graphic file (type bmp)
 <./fig/share.png>
 File: ./fig/link.png Graphic file (type bmp)
@@ -703,55 +708,55 @@ File: ./fig/share_tokyo.png Graphic file (type bmp)
 <./fig/share_tokyo.png>
 
 
-[22]
-
 [23]
+
+[24]
 File: ./fig/tokyo.png Graphic file (type bmp)
 <./fig/tokyo.png>
 File: ./fig/css.png Graphic file (type bmp)
 <./fig/css.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 493--494
- [][] 
- []
-
-
-
-[24]
-File: ./fig/drag.png Graphic file (type bmp)
-<./fig/drag.png>
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 506--507
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 490--491
  [][] 
  []
 
 
 
 [25]
+File: ./fig/drag.png Graphic file (type bmp)
+<./fig/drag.png>
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 503--504
+ [][] 
+ []
+
+
 
 [26]
+
+[27]
 第 4 章
 ) (./acknowledge/acknowledge.tex
 
-[27
+[28
 
 ]) (./reference/reference.tex
 
-[28
+[29
 
 ]
-Overfull \hbox (77.30614pt too wide) in paragraph at lines 6--7
+Overfull \hbox (77.30614pt too wide) in paragraph at lines 8--9
 []\OT1/cmr/m/n/10.95 Google Maps API- [][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 2753) in paragraph at lines 12--13
 []\OT1/cmr/m/n/10.95 Bootstrap - [][][][]
  []
 
 ) (./appendix/appendix.tex
 
-[29
+[30
 
 ] (./thesis.toc)
 \tf@toc=\write7
@@ -762,7 +767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 \BKM@file=\write8
 \openout8 = `thesis.out.ps'.
 
-[30
+[31
 
 ] (./thesis.aux)
  ***********
@@ -770,14 +775,18 @@ pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 12828 strings out of 468460
- 205106 string characters out of 5447603
- 612742 words of memory out of 5000000
- 41224 multiletter control sequences out of 15000+600000
+ 12829 strings out of 468460
+ 205111 string characters out of 5447603
+ 612810 words of memory out of 5000000
+ 41225 multiletter control sequences out of 15000+600000
  646095 words of font info for 119 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  87i,6n,96p,1238b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (32 pages, 93636 bytes).
+Output written on thesis.dvi (33 pages, 95320 bytes).
