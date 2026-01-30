@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  30 JAN 2026 12:09
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  30 JAN 2026 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -544,14 +544,17 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 34.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 34.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
 
 
 [5
 
 ]
+File: ./fig/MTV.png Graphic file (type bmp)
+<./fig/MTV.png>
+
 
 [6]
 第 3 章
@@ -584,14 +587,14 @@ File: ./fig/search_results.png Graphic file (type bmp)
 
 [10]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-43.
+48.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
 
-Overfull \hbox (14.47548pt too wide) in paragraph at lines 143--144
+Overfull \hbox (14.47548pt too wide) in paragraph at lines 148--149
 []\OT1/cmr/m/n/12 <script src="[][][][]=\OMS/cmsy/m/n/12 ff \OT1/cmr/m/n/12 goo
 gle[]maps[]api[]key
  []
@@ -602,14 +605,14 @@ gle[]maps[]api[]key
 File: ./fig/map.png Graphic file (type bmp)
 <./fig/map.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 169--170
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 174--175
  [][] 
  []
 
 File: ./fig/focus_on_date.png Graphic file (type bmp)
 <./fig/focus_on_date.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 177--178
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 182--183
  [][] 
  []
 
@@ -618,19 +621,19 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 177--178
 [12]
 
 [13]
-Overfull \hbox (186.95622pt too wide) in paragraph at lines 213--213
+Overfull \hbox (186.95622pt too wide) in paragraph at lines 218--218
 []       \OT1/cmtt/m/n/12 const durationElements = activeTabPane ? activeTabPan
 e.querySelectorAll('.travel-duration') : [];[] 
  []
 
 
-Overfull \hbox (38.75615pt too wide) in paragraph at lines 238--238
+Overfull \hbox (38.75615pt too wide) in paragraph at lines 243--243
 []  \OT1/cmtt/m/n/12 console.log('Drag ended, oldIndex:', evt.oldIndex, 'newInd
 ex:', evt.newIndex);[] 
  []
 
 
-Overfull \hbox (156.0812pt too wide) in paragraph at lines 238--238
+Overfull \hbox (156.0812pt too wide) in paragraph at lines 243--243
 []  \OT1/cmtt/m/n/12 const durationElements = activeTabPane ? activeTabPane.que
 rySelectorAll('.travel-duration') : [];[] 
  []
@@ -638,13 +641,13 @@ rySelectorAll('.travel-duration') : [];[]
 
 
 [14]
-Overfull \hbox (63.45616pt too wide) in paragraph at lines 283--283
+Overfull \hbox (63.45616pt too wide) in paragraph at lines 288--288
 []    \OT1/cmtt/m/n/12 const sortableContainers = document.querySelectorAll('[i
 d^="sortable-places"]');[] 
  []
 
 
-Overfull \hbox (88.15617pt too wide) in paragraph at lines 283--283
+Overfull \hbox (88.15617pt too wide) in paragraph at lines 288--288
 []    \OT1/cmtt/m/n/12 const items = activeTabPane ? activeTabPane.querySelecto
 rAll('.sortable-item') : [];[] 
  []
@@ -652,7 +655,7 @@ rAll('.sortable-item') : [];[]
 
 
 [15]
-Overfull \hbox (44.93115pt too wide) in paragraph at lines 283--283
+Overfull \hbox (44.93115pt too wide) in paragraph at lines 288--288
 [] \OT1/cmtt/m/n/12 console.log(`Item ${index}: placeId=${placeId}, day=${day},
  newOrder=${order}`);[] 
  []
@@ -708,7 +711,7 @@ File: ./fig/tokyo.png Graphic file (type bmp)
 File: ./fig/css.png Graphic file (type bmp)
 <./fig/css.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 488--489
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 493--494
  [][] 
  []
 
@@ -718,7 +721,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 488--489
 File: ./fig/drag.png Graphic file (type bmp)
 <./fig/drag.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 501--502
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 506--507
  [][] 
  []
 
@@ -769,12 +772,12 @@ L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12822 strings out of 468460
- 204996 string characters out of 5447603
+ 12828 strings out of 468460
+ 205106 string characters out of 5447603
  612742 words of memory out of 5000000
- 41219 multiletter control sequences out of 15000+600000
+ 41224 multiletter control sequences out of 15000+600000
  646095 words of font info for 119 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  87i,6n,96p,1238b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (32 pages, 92944 bytes).
+Output written on thesis.dvi (32 pages, 93636 bytes).
