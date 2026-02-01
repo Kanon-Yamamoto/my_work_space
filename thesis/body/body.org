@@ -121,7 +121,9 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 
 
 #+begin_src python
-<script src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?
+     key={{ google_maps_api_key }}&callback=initMap" 
+     async defer></script>
 #+end_src
 のようにAPIを読み込んでいる. 
 
@@ -382,8 +384,9 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 これにより,準備の進捗状況を可視化しながら, 持ち物の確認状況を一目で把握できるようになり, 確認漏れや二重確認の負担を軽減することが可能となった. 
 チェックの状態は旅行ごとに保存されるため, 複数の旅行を並行して準備する場合でも, 各旅程の進捗を個別に管理できる. 
 #+CAPTION: チェックリストの管理画面.
- #+attr_latex: :width 10cm
- file:./fig/checklist_maintenance.png
+#+attr_latex: :width 10cm
+file:./fig/checklist_maintenance.png
+
 これらの機能は,旅行前の準備を支援する上で重要な役割を果たしており,ユーザーが安心して出発できるよう,
 実用性と柔軟性を兼ね備えたチェックリスト管理環境を提供している.
 

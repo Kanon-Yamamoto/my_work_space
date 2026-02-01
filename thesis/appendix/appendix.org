@@ -3,4 +3,3 @@
 #+LANGUAGE: jp
 #+OPTIONS: ^:{}
 #+LATEX_HEADER:\renewcommand{\bibname}
-

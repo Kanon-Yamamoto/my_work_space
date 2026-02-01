@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+
+task :default do
+  system "rake -T"
+end
+
 desc "mkpdf"
 task :mkpdf do
   # files = ["body"]
@@ -47,10 +52,10 @@ end
 
 def convert_tex()
   head = <<'EOS'
-\documentclass[12pt,a4]{jreport}
+%\documentclass[12pt,a4]{jreport}
 
 %setting format and calling packages
-%\input{./header/header}
+\input{./header/header}
 \input{./header/usepackage}% pieces
 \input{./header/form00_style}% pieces
 \input{./header/tightlist_setting}% pieces
@@ -77,8 +82,7 @@ def convert_tex()
 %\renewcommand{\appendix}{}
 %\appendix
 %\renewcommand{\thesection}{付録.}
-\input{./appendix/appendix.tex}
-
+%\input{./appendix/appendix.tex}
 
 \end{document}
 
