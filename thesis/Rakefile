@@ -6,8 +6,8 @@ end
 
 desc "mkpdf"
 task :mkpdf do
-  # files = ["body"]
-  files = ["body", "appendix"]
+  files = ["body"]
+  #files = ["body", "appendix"]
   pdf_file = "thesis"
 
   files.each do |target_file|
