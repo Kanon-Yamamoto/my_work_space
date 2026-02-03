@@ -1,7 +1,7 @@
 \tableofcontents
 
 \chapter{序論}
-\label{sec:orge8cb5da}
+\label{sec:orgdf48ca5}
 修学旅行などのイベントでは, 参加者に対して事前にしおりが配布されることが多い.
 しおりは旅程の把握や所持品の確認, 集合時間の共有などを目的とした重要な情報媒体であり, 旅行の準備や当日の行動において欠かせない役割を果たしている.
 近年では,スマートフォンの普及により, 紙媒体に代わってWebサービスを活用した旅行データの閲覧・共有の
@@ -18,15 +18,15 @@
 そこで本研究では, 視覚的な理解と効率的に旅行計画を行える「デジタル版しおり」として機能する旅行アプリの開発を目指す.
 
 \chapter{手法}
-\label{sec:org13473f9}
+\label{sec:org9d04d37}
 \section{開発手法}
-\label{sec:org670f4f6}
+\label{sec:org7876a0e}
 本研究では, 限られた開発期間内で効率的に成果を上げるために, 機能ごとに優先順位を設定し, それぞれについて計画・設計・実装・テストの工程を小刻みに繰り返すアジャイル手法を採用した.  
 各段階で得られた知見や, 研究室内のメンバーからのフィードバックをもとに, 仕様やUIの見直しを行いながら, 柔軟に改善を重ねた.
 これにより, 利用者の視点を反映した機能の追加や調整が可能となり, アプリケーションの完成度と実用性を段階的に高めることができた.
 
 \subsection{Django}
-\label{sec:org6535f29}
+\label{sec:orge6a9efc}
 開発環境として, Pythonで実装されたサーバーサイドWebアプリケーションフレームワークであるDjangoを選定した[2]. Djangoを選定した理由は以下の3つである.
 
 1つ目は, ユーザー認証や管理画面, データベース操作などの機能が初期状態で組み込まれており, 追加設定を行わずとも迅速に開発を開始できる点である. これにより, 開発初期の環境構築にかかる時間を大幅に削減することが可能となった.
@@ -50,9 +50,9 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 また,実装にはPython, HTML, JavaScript, CSSを使用し,UIライブラリとしてはBootstrapを採用した.開発にあたってはCopilot[5]を参照しながら,実装を進めた.
 
 \chapter{結果と考察}
-\label{sec:org97ef171}
+\label{sec:orgc7c6ae9}
 \section{アプリ機能}
-\label{sec:org72b34e8}
+\label{sec:org8b46302}
 今回，開発したアプリでは大きく分けて7つの機能を実装した.
 それぞれの機能は図3.1の通りである.それぞれの機能について次節以降で記述する.
 \begin{figure}[htbp]
@@ -63,7 +63,7 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 
 
 \subsection{アカウント機能}
-\label{sec:org51dd112}
+\label{sec:org2068b5b}
 本アプリケーションでは,ユーザー認証機能としてログイン機能と新規登録機能を実装した.
 
 図3.2に示したとおり,ログイン画面では登録済みのユーザーがユーザー名とパスワードを入力することで,個別の旅行プランやチェックリストにアクセスできるようになっている.
@@ -93,7 +93,7 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 
 
 \subsection{旅行作成画面}
-\label{sec:org27a7ca6}
+\label{sec:org73077c3}
 
 図3.5に示す旅行作成画面では, 旅行そのものを作成し, 計画している旅行のチェックリストなど全てのデータが集約される. 
 この画面では, タイトル, メモ, 旅行期間が入力できる. 開始日と終了日から旅行の期間を計算し, のちに説明する旅行詳細画面で日程ごとの計画を表示できるようにしている.
@@ -104,7 +104,7 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 \end{figure}
 
 \subsection{旅行一覧画面}
-\label{sec:org00bc2f4}
+\label{sec:orgc7623dd}
 
 まず, 図3.6に示したとおり登録された旅行期間に基づいて, 各旅行を「予定」「旅行中」「終了」「未定」の4つのステータスに分類し, 色分けによって一覧画面上に表示する機能を実装した. 
 これにより, ユーザーは「どこに行ったか」「これからどこに行くか」といった旅行の進行状況を一目で把握できるようになった. 
@@ -128,7 +128,7 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 \end{figure}
 
 \subsection{旅行詳細画面}
-\label{sec:org3381eae}
+\label{sec:org9e166ed}
 
 旅行作成時に入力された期間により, 旅行の日数分だけタブを動的に生成する機能を実装した. 
 また, 旅行に含まれる観光場所を「全体」「1日目」「2日目」など日程ごとに切り替えて表示し, ユーザーはタブを操作することで旅行全体の流れを把握できるようになる. 
@@ -162,7 +162,9 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
 	zoom: 5,
 	center: {lat: 36.2048, lng: 138.2529}
-    }
+    });
+}
+
 
 \end{verbatim}
 
@@ -187,7 +189,7 @@ function initMap() {
 
 
 \subsection{旅行詳細画面 - 編集機能}
-\label{sec:orgd7128b8}
+\label{sec:orga4a164a}
 
 旅行の計画を柔軟に調整できるよう, 旅程編集に関する2つの機能がある. 
 
@@ -209,7 +211,9 @@ onStart: function(evt) {
 
 	      // 所要時間を非表示にする
 	      const activeTabPane = document.querySelector('.tab-pane.active');
-	      const durationElements = activeTabPane ? activeTabPane.querySelectorAll('.travel-duration') : [];
+	      const durationElements = activeTabPane ? 
+	      activeTabPane.querySelectorAll('.travel-duration') 
+	      : [];
 	      durationElements.forEach(element => {
 		  element.style.display = 'none';
 	      });
@@ -225,7 +229,9 @@ onEnd: function(evt) {
 
 		// 所要時間を再表示
 		const activeTabPane = document.querySelector('.tab-pane.active');
-		const durationElements = activeTabPane ? activeTabPane.querySelectorAll('.travel-duration') : [];
+		const durationElements = activeTabPane ? 
+		activeTabPane.querySelectorAll('.travel-duration')
+		: [];
 		durationElements.forEach(element => {
 		    element.style.display = 'block';
 		});
@@ -337,7 +343,7 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 
 
 \subsection{旅行詳細画面 - 地点登録機能}
-\label{sec:org94d3286}
+\label{sec:org56f7943}
 
 地点登録機能では, MapboxのSearch Box API[8]を活用している. 
 
@@ -355,7 +361,7 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 
 
 \subsection{チェックリスト機能}
-\label{sec:orgb028a66}
+\label{sec:org13b8a94}
 
 旅行準備を効率的に進められるよう, チェックリストに関する複数の機能を実装した.
 
@@ -374,37 +380,51 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 この処理は Django のシグナル機能[9]を用いて実現しており, 以下のような関数を定義している. 
 本実装では, シグナル機能を利用することで, ユーザーが新しく登録された際に, 初期チェックリストをコピーする処理を自動で実行できるようになった.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=12cm]{./fig/receive.png}
-\end{figure}
-
+\begin{verbatim}
+@receiver(post_save, sender=User)
+def create_user_checklist(sender, instance, created, **kwargs):
+\end{verbatim}
 
 この関数は, Userモデルのインスタンスが新規作成されたタイミング(post\_save シグナル)で呼び出され, 以下の処理を実行する.
 
-
 1.user=None かつ is\_system\_default=True の条件に一致する, システム共通のチェックリスト項目を取得する.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=12cm]{./fig/created.png}
-\end{figure}
+
+\begin{verbatim}
+if created:
+    # システムデフォルト (user=None) のアイテムを取得
+    system_items = UserChecklistItem.objects.filter(
+	user=None, 
+	is_system_default=True
+    )
+\end{verbatim}
 
 2.各項目を, 作成されたユーザー用に複製し, user=instance として新たなインスタンスを生成する.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=12cm]{./fig/items.png}
-\end{figure}
+\begin{verbatim}
+user_items = []
+
+    for item in system_items:
+	user_items.append(
+	    UserChecklistItem(
+		user=instance,
+		category=item.category,
+		name=item.name,
+		order=item.order,
+		is_system_default=False  # ユーザー用なのでFalse
+	    )
+	)
+\end{verbatim}
+
 
 3.bulk\_create()を用いて, 複数のチェックリスト項目を一括でデータベースに登録する. 
 これにより,データベースへのアクセス回数を抑え, 高速かつ効率的に登録処理を行うことができる.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=12cm]{./fig/user_items.png}
-\end{figure}
 
+\begin{verbatim}
+if user_items:
+	  UserChecklistItem.objects.bulk_create(user_items)
+\end{verbatim}
 
 このようにすることで, ユーザーはアカウント作成直後から, 基本的な持ち物が登録されたチェックリストを利用できるようになり, 利便性が向上する.
 また,チェックリストはユーザーごとに独立して管理されるため, 各自が項目の追加・削除・並び替えを自由に行える.
@@ -433,7 +453,7 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 
 \newpage
 \subsection{共有機能}
-\label{sec:org18d5dfe}
+\label{sec:org6b99a73}
 本アプリでは, 図3.15に示したとおりユーザーが作成した旅行計画を他者と共有するためのリンク生成機能を実装した. 
 この機能により, ユーザーはパスワード付きの専用URLを発行し,家族や友人と旅行データを安全かつ手軽に共有できる. 
 共有リンクの作成時には, ユーザーがあらかじめ用意された選択肢から有効期間を選択できるように設計しており, 
@@ -476,7 +496,7 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 \end{figure}
 
 \subsection{UI設計とスタイルの工夫}
-\label{sec:orged91d1e}
+\label{sec:org08b9df7}
 本システムでは, Bootstrap 5.1.3[10]を採用し, ユーザーインターフェースの視覚的理解を促進した. 
 
 観光地データなどの表示にBootstrapのカードコンポーネントを活用し, データの視認性と整理性を高めている. 
@@ -508,7 +528,7 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 \end{figure}
 
 \chapter{まとめ}
-\label{sec:orgf910033}
+\label{sec:orgad7fec4}
 
 本研究では，pythonで書かれたサーバー側WebアプリケーションフレームワークであるDjangoを開発環境として，
 視覚的な理解と効率的に旅行計画を行えるデジタル版しおりを開発した.

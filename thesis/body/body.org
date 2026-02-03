@@ -142,7 +142,9 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 5,
         center: {lat: 36.2048, lng: 138.2529}
-    }
+    });
+}
+
     
 #+end_src
 
@@ -184,7 +186,9 @@ CDNとは, インターネット上に分散配置されたサーバー群から
                 
                 // 所要時間を非表示にする
                 const activeTabPane = document.querySelector('.tab-pane.active');
-                const durationElements = activeTabPane ? activeTabPane.querySelectorAll('.travel-duration') : [];
+                const durationElements = activeTabPane ? 
+                activeTabPane.querySelectorAll('.travel-duration') 
+                : [];
                 durationElements.forEach(element => {
                     element.style.display = 'none';
                 });
@@ -200,7 +204,9 @@ CDNとは, インターネット上に分散配置されたサーバー群から
                     
                     // 所要時間を再表示
                     const activeTabPane = document.querySelector('.tab-pane.active');
-                    const durationElements = activeTabPane ? activeTabPane.querySelectorAll('.travel-duration') : [];
+                    const durationElements = activeTabPane ? 
+                    activeTabPane.querySelectorAll('.travel-duration')
+                    : [];
                     durationElements.forEach(element => {
                         element.style.display = 'block';
                     });
@@ -341,33 +347,51 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 この処理は Django のシグナル機能[9]を用いて実現しており, 以下のような関数を定義している. 
 本実装では, シグナル機能を利用することで, ユーザーが新しく登録された際に, 初期チェックリストをコピーする処理を自動で実行できるようになった.
 
- #+CAPTION:
- #+attr_latex: :width 12cm
- file:./fig/receive.png
-
+#+begin_src python
+@receiver(post_save, sender=User)
+def create_user_checklist(sender, instance, created, **kwargs):
+#+end_src
 
 この関数は, Userモデルのインスタンスが新規作成されたタイミング(post_save シグナル)で呼び出され, 以下の処理を実行する.
 
-
 1.user=None かつ is_system_default=True の条件に一致する, システム共通のチェックリスト項目を取得する.
 
- #+CAPTION:
- #+attr_latex: :width 12cm
- file:./fig/created.png
+
+#+begin_src python
+    if created:
+        # システムデフォルト (user=None) のアイテムを取得
+        system_items = UserChecklistItem.objects.filter(
+            user=None, 
+            is_system_default=True
+        )
+#+end_src
 
 2.各項目を, 作成されたユーザー用に複製し, user=instance として新たなインスタンスを生成する.
 
- #+CAPTION:
- #+attr_latex: :width 12cm
- file:./fig/items.png
+#+begin_src python
+    user_items = []
+
+        for item in system_items:
+            user_items.append(
+                UserChecklistItem(
+                    user=instance,
+                    category=item.category,
+                    name=item.name,
+                    order=item.order,
+                    is_system_default=False  # ユーザー用なのでFalse
+                )
+            )
+#+end_src
+
 
 3.bulk_create()を用いて, 複数のチェックリスト項目を一括でデータベースに登録する. 
 これにより,データベースへのアクセス回数を抑え, 高速かつ効率的に登録処理を行うことができる.
 
- #+CAPTION:
- #+attr_latex: :width 12cm
- file:./fig/user_items.png
 
+#+begin_src python
+  if user_items:
+            UserChecklistItem.objects.bulk_create(user_items)
+#+end_src
 
 このようにすることで, ユーザーはアカウント作成直後から, 基本的な持ち物が登録されたチェックリストを利用できるようになり, 利便性が向上する.
 また,チェックリストはユーザーごとに独立して管理されるため, 各自が項目の追加・削除・並び替えを自由に行える.
