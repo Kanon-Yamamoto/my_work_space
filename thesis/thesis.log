@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  3 FEB 2026 12:47
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  4 FEB 2026 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -701,20 +701,13 @@ File: ./fig/share_tokyo.png Graphic file (type bmp)
 [23]
 File: ./fig/tokyo.png Graphic file (type bmp)
 <./fig/tokyo.png>
-File: ./fig/css.png Graphic file (type bmp)
-<./fig/css.png>
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 512--513
- [][] 
- []
-
 
 
 [24]
 File: ./fig/drag.png Graphic file (type bmp)
 <./fig/drag.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 525--526
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 534--535
  [][] 
  []
 
@@ -751,12 +744,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13386 strings out of 468460
- 214898 string characters out of 5447603
+ 13380 strings out of 468460
+ 214788 string characters out of 5447603
  618518 words of memory out of 5000000
- 41772 multiletter control sequences out of 15000+600000
+ 41767 multiletter control sequences out of 15000+600000
  698367 words of font info for 113 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  77i,6n,82p,625b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (31 pages, 74976 bytes).
+Output written on thesis.dvi (31 pages, 75028 bytes).

@@ -461,9 +461,19 @@ file:./fig/checklist_maintenance.png
 
 以下は実装内容である. 
 
- #+CAPTION:
- #+attr_latex: :width 17cm
- file:./fig/css.png
+#+begin_src python
+.sortable-ghost {
+    opacity: 0.4;
+}
+
+.sortable-drag {
+    transform: rotate(5deg);
+}
+
+.drag-handle:hover {
+    color: #007bff !important;
+}
+#+end_src 
 
 1 .sortable-ghost クラスは, SortableJSがドラッグ中に元の位置に自動的に付与するクラスである. 本スタイルでは opacity: 0.4 を指定することで, 元の位置に残る要素を半透明にし, ユーザーに「この位置にあった要素が移動中である」ことを視覚的に示している. これにより, 並べ替え操作中の空間的な把握が容易となる.
 
