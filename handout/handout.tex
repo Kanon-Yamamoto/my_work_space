@@ -1,0 +1,98 @@
+  \documentclass[a4j,twocolumn]{jsarticle}
+  \usepackage[dvipdfmx]{graphicx}
+  \usepackage{url}
+
+  \setlength{\textheight}{275mm}
+  \headheight 5mm
+  \topmargin -30mm
+  \textwidth 185mm
+  \oddsidemargin -15mm
+  \evensidemargin -15mm
+  \pagestyle{empty}
+
+
+  \begin{document}
+
+  \title{デジタル版しおりの開発}
+  \author{情報工学課程 \hspace{5mm} 37022463 \hspace{5mm} 西谷研究室　山本果音}
+  \date{}
+
+  \maketitle
+\maketitle
+
+
+
+
+\section{序論}
+\label{sec:org1e484f6}
+
+修学旅行などのイベントでは, 参加者に対して事前にしおりが配布されることが多い.
+しおりは旅程の把握や所持品の確認, 集合時間の共有などを目的とした重要な情報媒体であり, 旅行の準備や当日の行動において欠かせない役割を果たしている.
+近年では,スマートフォンの普及により, 紙媒体に代わってWebサービスを活用した旅行データの閲覧・共有の
+ニーズが高まっており, 「旅しお」[1]のようなWebアプリも登場している.
+しかし, これらのサービスにはいくつかの課題が存在する.
+
+1つ目は, 旅行名や説明文に対するキーワード検索機能が存在しないため, ユーザーはスクロール操作によって目的のしおりを探す必要がある点である.
+
+2つ目は, 地図表示機能がないため, 目的地の位置関係や全体像を視覚的に理解することが難しく, 利用者は外部ツールや手作業で補完しなければならない.
+
+3つ目は, 移動時間の自動算出機能が存在しないため, 各目的地間の所要時間をユーザー自身が都度手動で調べる必要がある点である. これにより, 旅行全体のスケジュールを立てる際に手間がかかり, 計画の精度や効率性が低下する可能性がある.
+
+これらの課題は, 旅行計画の際にユーザーにとって大きな障壁となっており, データの整理や視覚的な理解の低下が考えられる.
+そこで本研究では, 視覚的な理解と効率的に旅行計画を行える「デジタル版しおり」として機能する旅行アプリの開発を目指す.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=6cm]{./figs/shiori2.png}
+\caption{\label{fig:org243694c}.}
+\end{figure}
+
+\section{開発手法}
+\label{sec:org9d80fa6}
+本研究では, 限られた開発期間内で効率的に成果を上げるために, 機能ごとに優先順位を設定し, それぞれについて計画・設計・実装・テストの工程を小刻みに繰り返すアジャイル手法を採用した.  
+各段階で得られた知見や, 研究室内のメンバーからのフィードバックをもとに, 仕様やUIの見直しを行いながら, 柔軟に改善を重ねた.
+
+開発環境としてはDjangoを選定した.
+Djangoは,PythonベースのWebフレームワークである.
+Djangoの利点は以下の3つである[2].
+\begin{enumerate}
+\item 認証,管理画面,データベース操作などが最初から組み込まれているため,追加設定なしで迅速な開発が可能.
+\item データベースの設計変更やマイグレーションを含む複雑なデータベース操作も,全てPythonで記述できるため学習コストが低い.
+\item セキュリティ対策を実装しなくても,フレームワーク自体が標準で安全性を確保する仕組みを備えている.
+\end{enumerate}
+また, 実装にはPython, HTML, JavaScript, CSSを使用し,UIライブラリとしてはBootstrap, Font Awesomeを採用した.
+開発にあたってはCopilotを参照しながら, 実装を進めた.
+
+\section{結果}
+\label{sec:org9889ba6}
+今回開発したWebアプリは,以下のような動作を行う.
+
+\begin{enumerate}
+\item 登録された旅行期間に基づき,図2のとおり「完了した旅行」「旅行中」「予定の旅行」「期間未設定」のいずれに該当するかを判定し,色分けして表示することで,旅行の状態を視覚的に把握しやすくする.
+\item 旅行名や説明文に含まれるキーワードで検索が可能であり,目的の旅行をすばやく見つけることができる.
+\end{enumerate}
+これにより,過去の履歴と今後の予定を視覚的に整理することができるため,ユーザーが「どこに行ったか」「次にどこへ行くか」を一目で認識できるようになった.
+また,ユーザーの記憶が曖昧な場合でも関連するキーワードから目的の旅行を容易に特定することが可能となり,再訪計画にも活用が可能になった.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=6cm]{./figs/trip1.png}
+\caption{\label{fig:orge72fbff}旅行日付に基づく時系列判定と色分けによる視覚的管理を行ったときの画面.}
+\end{figure}
+
+
+\section{今後の課題}
+\label{sec:org946caac}
+旅行日付に基づく色分け表示,キーワード検索機能を開発した.
+今後,旅行先の地理的な位置関係を視覚的に把握できるようにする地図の表示,旅行準備の漏れを防ぐための所持品チェックリスト機能や,日程に応じて柔軟に観光訪問順を変更できる入れ替え機能の開発を予定している.
+
+
+
+
+\small\setlength\baselineskip{10pt}
+\begin{thebibliography}{9}
+
+\bibitem{旅しお} 旅しお,\url{https://tabisio.com/},(2025/09/05 accessed).
+\bibitem{Django-site}Django,\url{https://www.djangoproject.com/},(2025/09/05 accessed).
+\bibitem{Copilot}Copilot,\url{https://copilot.microsoft.com/?form=NTPCHB&showconv=1},(2025/09/05 accessed).
+\end{thebibliography}
+\end{document}
