@@ -11,6 +11,6 @@
 \contentsline {subsection}{\numberline {3.1.5}旅行詳細画面 - 編集機能}{13}{subsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.1.6}旅行詳細画面 - 地点登録機能}{18}{subsection.3.1.6}%
 \contentsline {subsection}{\numberline {3.1.7}チェックリスト機能}{18}{subsection.3.1.7}%
-\contentsline {subsection}{\numberline {3.1.8}共有機能}{22}{subsection.3.1.8}%
-\contentsline {subsection}{\numberline {3.1.9}UI設計とスタイルの工夫}{24}{subsection.3.1.9}%
-\contentsline {chapter}{\numberline {第4章}まとめ}{27}{chapter.4}%
+\contentsline {subsection}{\numberline {3.1.8}共有機能}{23}{subsection.3.1.8}%
+\contentsline {subsection}{\numberline {3.1.9}UI設計とスタイルの工夫}{25}{subsection.3.1.9}%
+\contentsline {chapter}{\numberline {第4章}まとめ}{28}{chapter.4}%
