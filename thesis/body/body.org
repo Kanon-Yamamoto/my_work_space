@@ -46,7 +46,7 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
  #+attr_latex: :width 15cm
  file:./fig/MTV.png
 
-また, 実装にはPython, HTML, JavaScript, CSSを使用し,UIライブラリとしてはBootstrap, Font Awesomeを採用した. 開発にあたってはCopilot[5]を参照しながら, 実装を進めた.
+また, 実装にはHTML, JavaScript, CSSを使用し, UIライブラリとしてはBootstrapを採用した. 開発にあたってはCopilot[5]を参照しながら, 実装を進めた.
 
 * 結果と考察
 ** [#B] アプリ機能
