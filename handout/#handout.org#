@@ -28,10 +28,10 @@
 本研究では, 限られた開発期間内で効率的に成果を上げるために, 機能ごとに優先順位を設定し, それぞれについて計画・設計・実装・テストの工程を小刻みに繰り返すアジャイル手法を採用した.  
 
 開発環境としてはDjangoを選定した.
-Djangoは, PythonベースのWebフレームワークである. 
+Djangoは,PythonベースのWebフレームワークである.
 また, 実装にはHTML, JavaScript, CSSを使用し,UIライブラリとしてはBootstrapを採用した.
 
-*  結果
+* TODO 結果
 
 本アプリでの旅行詳細共有までの流れとして, まず新規アカウント登録後にログイン画面へ遷移し, 旅行一覧画面で旅行を作成する. その後, 旅行詳細画面において地図表示, 観光地登録, 移動時間の自動算出, 訪問順序の入れ替え, タブ切り替えなどの旅程編集を行う. 
 
@@ -41,18 +41,13 @@ Djangoは, PythonベースのWebフレームワークである.
 #+attr_latex: :width 6cm
 file:./figs/trip.png
 
-旅行詳細が完成後, 図2に示したように生成したリンクを家族や友人に共有することで, 受け手は旅行情報を閲覧できる.
+旅行詳細が完成後, 生成したリンクを家族や友人に共有することで, 受け手は旅行情報を閲覧できる.
 #+CAPTION: 旅行詳細共有までの流れ.
 #+attr_latex: :width 6cm
 file:./figs/share_1.png
 
 さらに, 旅行準備を効率的に進められるよう, チェックリスト機能を実装した.
 チェックリストは旅行ごとに作成・編集でき, チェック状態の保存や再利用にも対応している. これにより, 忘れ物対策や準備作業の整理が容易となる.
-
-*  まとめ
-本アプリではDjango を用いて地図表示や移動時間の自動算出などを実現し，さらにチェックリスト機能も備えた.
-これにより，「旅しお」よりも計画作成と準備を効率的に進められる旅行支援アプリとなった.
-
 \small\setlength\baselineskip{10pt}
 \begin{thebibliography}{9}
 
@@ -60,3 +55,4 @@ file:./figs/share_1.png
 \bibitem{Django-site}Django,\url{https://www.djangoproject.com/},(2025/09/05 accessed).
 \bibitem{GitHub Copilot} GitHub Inc,\url{https://github.com/},(2025/09/05 accessed).
 \end{thebibliography}
+
