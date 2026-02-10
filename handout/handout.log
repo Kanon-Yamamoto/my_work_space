@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 17:53
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -134,21 +134,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./figs/trip.png Graphic file (type bmp)
 <./figs/trip.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 61.
+(Font)              scaled to size 8.64899pt on input line 62.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 61.
+(Font)              scaled to size 8.64899pt on input line 62.
 File: ./figs/share_1.png Graphic file (type bmp)
 <./figs/share_1.png>
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 86.
+(Font)              scaled to size 8.64899pt on input line 87.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 86.
+(Font)              scaled to size 8.64899pt on input line 87.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 86.
+(Font)              <9> on input line 87.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 86.
+(Font)              <5> on input line 87.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 86.
+(Font)              scaled to size 4.805pt on input line 87.
 
 
 [1
