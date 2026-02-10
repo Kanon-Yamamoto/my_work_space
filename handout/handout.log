@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  8 FEB 2026 17:35
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -134,21 +134,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./figs/trip.png Graphic file (type bmp)
 <./figs/trip.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 62.
+(Font)              scaled to size 8.64899pt on input line 61.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 62.
+(Font)              scaled to size 8.64899pt on input line 61.
 File: ./figs/share_1.png Graphic file (type bmp)
 <./figs/share_1.png>
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 83.
+(Font)              scaled to size 8.64899pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 83.
+(Font)              scaled to size 8.64899pt on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 83.
+(Font)              <9> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 83.
+(Font)              <5> on input line 86.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 83.
+(Font)              scaled to size 4.805pt on input line 86.
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]\OT1/cmr/m/n/9 Copilot,$\OT1/cmtt/m/n/9 https : / / copilot . microsoft . com
+/$\OT1/cmr/m/n/9 ,(2025/09/05
+ []
+
 
 
 [1
@@ -163,11 +169,11 @@ L3 programming layer <2025-07-19>
  ) 
 Here is how much of TeX's memory you used:
  1243 strings out of 468460
- 19775 string characters out of 5447603
+ 19768 string characters out of 5447603
  434850 words of memory out of 5000000
  29906 multiletter control sequences out of 15000+600000
  637101 words of font info for 87 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  57i,8n,65p,276b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on handout.dvi (1 page, 6936 bytes).
+Output written on handout.dvi (1 page, 7424 bytes).

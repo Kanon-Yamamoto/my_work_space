@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 10:13
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -566,8 +566,8 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 [4
 
 ]
-File: ./fig/MTV.png Graphic file (type bmp)
-<./fig/MTV.png>
+File: ./fig/MTV_1.png Graphic file (type bmp)
+<./fig/MTV_1.png>
 
 
 [5]
@@ -739,7 +739,7 @@ L3 programming layer <2025-07-19>
  ) 
 Here is how much of TeX's memory you used:
  13381 strings out of 468460
- 214801 string characters out of 5447603
+ 214813 string characters out of 5447603
  618512 words of memory out of 5000000
  41768 multiletter control sequences out of 15000+600000
  698367 words of font info for 113 fonts, out of 8000000 for 9000

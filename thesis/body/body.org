@@ -44,7 +44,7 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 
  #+CAPTION: DjangoのMTV構成に基づくリクエスト処理の流れ.
  #+attr_latex: :width 15cm
- file:./fig/MTV.png
+ file:./fig/MTV_1.png
 
 また, 実装にはHTML, JavaScript, CSSを使用し, UIライブラリとしてはBootstrapを採用した. 開発にあたってはCopilot[5]を参照しながら, 実装を進めた.
 
