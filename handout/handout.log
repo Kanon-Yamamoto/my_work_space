@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 17:33
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -150,12 +150,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 86.
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-[]\OT1/cmr/m/n/9 Copilot,$\OT1/cmtt/m/n/9 https : / / copilot . microsoft . com
-/$\OT1/cmr/m/n/9 ,(2025/09/05
- []
-
-
 
 [1
 
@@ -168,12 +162,12 @@ L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1243 strings out of 468460
- 19768 string characters out of 5447603
+ 1242 strings out of 468460
+ 19759 string characters out of 5447603
  434850 words of memory out of 5000000
- 29906 multiletter control sequences out of 15000+600000
+ 29905 multiletter control sequences out of 15000+600000
  637101 words of font info for 87 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  57i,8n,65p,276b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on handout.dvi (1 page, 7424 bytes).
+Output written on handout.dvi (1 page, 7336 bytes).

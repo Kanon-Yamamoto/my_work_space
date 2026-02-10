@@ -24,7 +24,7 @@
 
 
 \section{序論}
-\label{sec:org62215db}
+\label{sec:org284178b}
 
 修学旅行などのイベントでは, 参加者に対して事前にしおりが配布されることが多い.
 しおりは旅程の把握や所持品の確認, 集合時間の共有などを目的とした重要な情報媒体であり, 旅行の準備や当日の行動において欠かせない役割を果たしている.
@@ -42,14 +42,14 @@
 そこで本研究では, 視覚的な理解と効率的に旅行計画を行える「デジタル版しおり」として機能する旅行アプリの開発を目指す.
 
 \section{開発手法}
-\label{sec:org0e70c3f}
+\label{sec:org156eac7}
 本研究では, 限られた開発期間内で効率的に成果を上げるために, 機能ごとに優先順位を設定し, それぞれについて計画・設計・実装・テストの工程を小刻みに繰り返すアジャイル開発手法を採用した.  
 
-開発環境としてはDjangoを選定した.
+開発環境としてはDjango[2]を選定した.
 Djangoとは, PythonベースのWebフレームワークのことである. 
 
 \section{結果}
-\label{sec:org2f831c2}
+\label{sec:org3ca88af}
 
 本アプリでの旅行詳細共有までの流れとして, まず新規アカウント登録後にログイン画面へ遷移し, 旅行一覧画面で旅行を作成する. その後, 旅行詳細画面において地図表示, 観光地登録, 移動時間の自動算出, 訪問順序の入れ替え, タブ切り替えなどの旅程編集を行う. 
 
@@ -76,7 +76,7 @@ Djangoとは, PythonベースのWebフレームワークのことである.
 これにより, 忘れ物対策や準備作業の整理が容易となる.
 
 \section{まとめ}
-\label{sec:org122a51c}
+\label{sec:org9781359}
 本アプリではDjango を用いて地図表示や移動時間の自動算出などを実現し，さらにチェックリスト機能も備えた.
 これにより，「旅しお」よりも計画作成と準備を効率的に進められる旅行支援アプリとなった.
 
@@ -85,6 +85,5 @@ Djangoとは, PythonベースのWebフレームワークのことである.
 
 \bibitem{旅しお} 旅しお,\url{https://tabisio.com/},(2025/09/05 accessed).
 \bibitem{Django-site}Django,\url{https://www.djangoproject.com/},(2025/09/05 accessed).
-\bibitem{Copilot} Copilot,\url{https://copilot.microsoft.com/},(2025/09/05 accessed).
 \end{thebibliography}
 \end{document}
