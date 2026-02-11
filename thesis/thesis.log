@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 10:23
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.euc) (TeX Live 2025) (preloaded format=platex 2025.7.27)  10 FEB 2026 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,23 +607,18 @@ File: ./fig/search_results.png Graphic file (type bmp)
 File: ./fig/map.png Graphic file (type bmp)
 <./fig/map.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 174--175
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 175--176
  [][] 
  []
 
-File: ./fig/focus_on_date.png Graphic file (type bmp)
-<./fig/focus_on_date.png>
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 183--184
- [][] 
- []
-
+File: ./fig/date.png Graphic file (type bmp)
+<./fig/date.png>
 
 
 [12]
 
 [13]
-Overfull \hbox (38.75615pt too wide) in paragraph at lines 248--248
+Overfull \hbox (38.75615pt too wide) in paragraph at lines 250--250
 []  \OT1/cmtt/m/n/12 console.log('Drag ended, oldIndex:', evt.oldIndex, 'newInd
 ex:', evt.newIndex);[] 
  []
@@ -631,35 +626,35 @@ ex:', evt.newIndex);[]
 
 
 [14]
-Overfull \hbox (63.45616pt too wide) in paragraph at lines 293--293
+Overfull \hbox (63.45616pt too wide) in paragraph at lines 295--295
 []    \OT1/cmtt/m/n/12 const sortableContainers = document.querySelectorAll('[i
 d^="sortable-places"]');[] 
  []
 
 
-
-[15]
-Overfull \hbox (88.15617pt too wide) in paragraph at lines 293--293
+Overfull \hbox (88.15617pt too wide) in paragraph at lines 295--295
 []    \OT1/cmtt/m/n/12 const items = activeTabPane ? activeTabPane.querySelecto
 rAll('.sortable-item') : [];[] 
  []
 
 
-Overfull \hbox (44.93115pt too wide) in paragraph at lines 293--293
+
+[15]
+Overfull \hbox (44.93115pt too wide) in paragraph at lines 295--295
 [] \OT1/cmtt/m/n/12 console.log(`Item ${index}: placeId=${placeId}, day=${day},
  newOrder=${order}`);[] 
  []
 
-
-
-[16]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
-07.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
+09.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 307.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 309.
+
+
+[16]
 File: ./fig/car.png Graphic file (type bmp)
 <./fig/car.png>
 
@@ -684,8 +679,6 @@ File: ./fig/checklist_maintenance.png Graphic file (type bmp)
 
 
 [21]
-
-[22]
 File: ./fig/share.png Graphic file (type bmp)
 <./fig/share.png>
 File: ./fig/link.png Graphic file (type bmp)
@@ -694,41 +687,41 @@ File: ./fig/share_tokyo.png Graphic file (type bmp)
 <./fig/share_tokyo.png>
 
 
-[23]
+[22]
 
-[24]
+[23]
 File: ./fig/tokyo.png Graphic file (type bmp)
 <./fig/tokyo.png>
 
+
+[24]
 
 [25]
 File: ./fig/drag.png Graphic file (type bmp)
 <./fig/drag.png>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 535--536
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 540--541
  [][] 
  []
 
 
 
 [26]
-
-[27]
 第 4 章
 ) (./acknowledge/acknowledge.tex
 
-[28
+[27
 
 ]) (./reference/reference.tex
 
-[29
+[28
 
 ])
 
 \BKM@file=\write6
 \openout6 = `thesis.out.ps'.
 
-[30
+[29
 
 ] (./thesis.aux)
  ***********
@@ -738,12 +731,12 @@ L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13381 strings out of 468460
- 214813 string characters out of 5447603
+ 13380 strings out of 468460
+ 214755 string characters out of 5447603
  618512 words of memory out of 5000000
  41768 multiletter control sequences out of 15000+600000
  698367 words of font info for 113 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  77i,6n,82p,625b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (32 pages, 75184 bytes).
+Output written on thesis.dvi (31 pages, 74696 bytes).
