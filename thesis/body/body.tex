@@ -1,4 +1,6 @@
-\label{sec:orge34a51a}
+
+\chapter{序論}
+\label{sec:orgaf34c17}
 修学旅行などのイベントでは, 参加者に対して事前にしおりが配布されることが多い.
 しおりは旅程の把握や所持品の確認, 集合時間の共有などを目的とした重要な情報媒体であり, 旅行の準備や当日の行動において欠かせない役割を果たしている.
 近年では,スマートフォンの普及により, 紙媒体に代わってWebサービスを活用した旅行データの閲覧・共有の
@@ -13,15 +15,17 @@
 
 これらの課題は, 旅行計画の際にユーザーにとって大きな障壁となっており, データの整理や視覚的な理解の低下が考えられる.
 そこで本研究では, 視覚的な理解と効率的に旅行計画を行える旅行支援アプリの開発を目指す.
+
 \chapter{手法}
-\label{sec:orge45922c}
+\label{sec:org3450842}
 \section{開発手法}
-\label{sec:orgc054dcd}
+\label{sec:org26b7e7c}
 本研究では, 限られた開発期間内で効率的に成果を上げるために, 機能ごとに優先順位を設定し, それぞれについて計画・設計・実装・テストの工程を小刻みに繰り返すアジャイル手法を採用した.  
 各段階で得られた知見や, 研究室内のメンバーからのフィードバックをもとに, 仕様やUIの見直しを行いながら, 柔軟に改善を重ねた.
 これにより, 利用者の視点を反映した機能の追加や調整が可能となり, アプリケーションの完成度と実用性を段階的に高めることができた.
+
 \subsection{Django}
-\label{sec:org178fd33}
+\label{sec:org8b9cb32}
 開発環境として, Pythonで実装されたサーバーサイドWebアプリケーションフレームワークであるDjangoを選定した[2]. Djangoを選定した理由は以下の3つである.
 
 1つ目は, ユーザー認証や管理画面, データベース操作などの機能が初期状態で組み込まれており, 追加設定を行わずとも迅速に開発を開始できる点である. これにより, 開発初期の環境構築にかかる時間を大幅に削減することが可能となった.
@@ -43,10 +47,11 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 \end{figure}
 
 また, 実装にはHTML, JavaScript, CSSを使用し, UIライブラリとしてはBootstrapを採用した. 開発にあたってはCopilot[5]を参照しながら, 実装を進めた.
+
 \chapter{結果と考察}
-\label{sec:org028f03c}
+\label{sec:org59590fc}
 \section{アプリ機能}
-\label{sec:org1f8bb5b}
+\label{sec:orga53270b}
 今回，開発したアプリでは大きく分けて7つの機能を実装した.
 それぞれの機能は図3.1の通りである.それぞれの機能について次節以降で記述する.
 \begin{figure}[htbp]
@@ -54,8 +59,10 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 \includegraphics[width=15cm]{./fig/app.png}
 \caption{アプリ機能一覧.}
 \end{figure}
+
+
 \subsection{アカウント機能}
-\label{sec:orged85b2f}
+\label{sec:orgca51e25}
 本アプリケーションでは,ユーザー認証機能としてログイン機能と新規登録機能を実装した.
 
 図3.2に示したとおり,ログイン画面では登録済みのユーザーがユーザー名とパスワードを入力することで,個別の旅行プランやチェックリストにアクセスできるようになっている.
@@ -82,8 +89,10 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 \includegraphics[width=10cm]{./fig/logout.png}
 \caption{ログアウト画面.}
 \end{figure}
+
+
 \subsection{旅行作成画面}
-\label{sec:org3fc08d1}
+\label{sec:org5c73b25}
 
 図3.5は旅行作成画面である. 
 この画面では, タイトル, メモ, 旅行期間が入力できる. 開始日と終了日から旅行の期間を計算し, のちに説明する旅行詳細画面で日程ごとの計画を表示できるようにしている.
@@ -92,8 +101,9 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 \includegraphics[width=10cm]{./fig/new_trip.png}
 \caption{旅行作成画面.}
 \end{figure}
+
 \subsection{旅行一覧画面}
-\label{sec:org44fb650}
+\label{sec:org34ff50a}
 
 まず, 図3.6に示したとおり登録された旅行期間に基づいて, 各旅行を「予定」「旅行中」「終了」「未定」の4つのステータスに分類し, 色分けによって一覧画面上に表示する機能を実装した. 
 これにより, ユーザーは「どこに行ったか」「これからどこに行くか」といった旅行の進行状況を一目で把握できるようになった. 
@@ -115,8 +125,10 @@ DjangoはMTV（Model–Template–View）アーキテクチャに基づいてお
 \includegraphics[width=10cm]{./fig/search_results.png}
 \caption{検索結果画面.}
 \end{figure}
+
+
 \subsection{旅行詳細画面}
-\label{sec:org860bbb4}
+\label{sec:org7d9789d}
 
 旅行作成時に入力された期間により, 旅行の日数分だけタブを動的に生成する機能を実装した. 
 また, 旅行に含まれる観光場所を「全体」「1日目」「2日目」など日程ごとに切り替えて表示し, ユーザーはタブを操作することで旅行全体の流れを把握できるようにした. 
@@ -148,8 +160,8 @@ initMap()では以下の処理が行われている.
 function initMap() {
     // 日本の中心あたりを初期表示
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 5,
-        center: {lat: 36.2048, lng: 138.2529}
+	zoom: 5,
+	center: {lat: 36.2048, lng: 138.2529}
     });
 }
 
@@ -179,7 +191,7 @@ function initMap() {
 
 \newpage
 \subsection{旅行詳細画面 - 編集機能}
-\label{sec:orgdc3e6c6}
+\label{sec:orgbacb0a0}
 
 旅行の計画を柔軟に調整できるよう, 旅程編集に関する2つの機能がある. 
 
@@ -196,45 +208,45 @@ CDNとは, インターネット上に分散配置されたサーバー群から
 \begin{verbatim}
 
 onStart: function(evt) {
-              console.log('Drag started');
-              isDragging = true;
+	      console.log('Drag started');
+	      isDragging = true;
 
-              // 所要時間を非表示にする
-              const activeTabPane = document.querySelector('.tab-pane.active');
-              const durationElements = activeTabPane ? 
-              activeTabPane.querySelectorAll('.travel-duration') 
-              : [];
-              durationElements.forEach(element => {
-                  element.style.display = 'none';
-              });
-          }
+	      // 所要時間を非表示にする
+	      const activeTabPane = document.querySelector('.tab-pane.active');
+	      const durationElements = activeTabPane ? 
+	      activeTabPane.querySelectorAll('.travel-duration') 
+	      : [];
+	      durationElements.forEach(element => {
+		  element.style.display = 'none';
+	      });
+	  }
 \end{verbatim}
 
 
 ドラッグ終了時には,以下の処理を実行する.
 \begin{verbatim}
 onEnd: function(evt) {
-                console.log('Drag ended, oldIndex:', evt.oldIndex, 'newIndex:', evt.newIndex);
-                isDragging = false;
+		console.log('Drag ended, oldIndex:', evt.oldIndex, 'newIndex:', evt.newIndex);
+		isDragging = false;
 
-                // 所要時間を再表示
-                const activeTabPane = document.querySelector('.tab-pane.active');
-                const durationElements = activeTabPane ? 
-                activeTabPane.querySelectorAll('.travel-duration')
-                : [];
-                durationElements.forEach(element => {
-                    element.style.display = 'block';
-                });
+		// 所要時間を再表示
+		const activeTabPane = document.querySelector('.tab-pane.active');
+		const durationElements = activeTabPane ? 
+		activeTabPane.querySelectorAll('.travel-duration')
+		: [];
+		durationElements.forEach(element => {
+		    element.style.display = 'block';
+		});
 
-                updateOrderNumbers();
+		updateOrderNumbers();
 
-                if (evt.oldIndex !== evt.newIndex) {
-                    updatePlaceOrder();
-                } else {
-                    // ドラッグしたが順序が変わらなかった場合も所要時間を再計算
-                    updateTravelDurations();
-                }
-            }
+		if (evt.oldIndex !== evt.newIndex) {
+		    updatePlaceOrder();
+		} else {
+		    // ドラッグしたが順序が変わらなかった場合も所要時間を再計算
+		    updateTravelDurations();
+		}
+	    }
 \end{verbatim}
 
 
@@ -247,8 +259,8 @@ onEnd: function(evt) {
 \begin{verbatim}
 function updatePlaceOrder() {
     if (isUpdating) {
-        console.log('Update already in progress, skipping...');
-        return;
+	console.log('Update already in progress, skipping...');
+	return;
     }
 
     isUpdating = true;
@@ -256,9 +268,9 @@ function updatePlaceOrder() {
 
     const sortableContainers = document.querySelectorAll('[id^="sortable-places"]');
     sortableContainers.forEach(container => {
-        if (container && container.sortable) {
-            container.sortable.option('disabled', true);
-        }
+	if (container && container.sortable) {
+	    container.sortable.option('disabled', true);
+	}
     });
 
     const activeTabPane = document.querySelector('.tab-pane.active');
@@ -268,16 +280,16 @@ function updatePlaceOrder() {
     const placeOrders = [];
 
     items.forEach((item, index) => {
-        const placeId = parseInt(item.dataset.placeId);
-        const day = parseInt(item.dataset.day);
-        const order = index + 1;
-        console.log(`Item ${index}: placeId=${placeId}, day=${day}, newOrder=${order}`);
+	const placeId = parseInt(item.dataset.placeId);
+	const day = parseInt(item.dataset.day);
+	const order = index + 1;
+	console.log(`Item ${index}: placeId=${placeId}, day=${day}, newOrder=${order}`);
 
-        placeOrders.push({
-            place_id: placeId,
-            day: day,
-            order: order
-        });
+	placeOrders.push({
+	    place_id: placeId,
+	    day: day,
+	    order: order
+	});
     });
 }
 \end{verbatim}
@@ -334,7 +346,7 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 
 \newpage
 \subsection{旅行詳細画面 - 地点登録機能}
-\label{sec:org64bf6eb}
+\label{sec:org75db47d}
 
 地点登録機能では, MapboxのSearch Box API[8]を活用している. 
 
@@ -353,7 +365,7 @@ APIからのレスポンスには routes 配列が含まれており, 最適な�
 
 \newpage
 \subsection{チェックリスト機能}
-\label{sec:orge5da9e9}
+\label{sec:org26775bf}
 
 旅行準備を効率的に進められるよう, チェックリストに関する複数の機能を実装した.
 
@@ -386,8 +398,8 @@ def create_user_checklist(sender, instance, created, **kwargs):
 if created:
     # システムデフォルト (user=None) のアイテムを取得
     system_items = UserChecklistItem.objects.filter(
-        user=None, 
-        is_system_default=True
+	user=None, 
+	is_system_default=True
     )
 \end{verbatim}
 
@@ -397,15 +409,15 @@ if created:
 user_items = []
 
     for item in system_items:
-        user_items.append(
-            UserChecklistItem(
-                user=instance,
-                category=item.category,
-                name=item.name,
-                order=item.order,
-                is_system_default=False  # ユーザー用なのでFalse
-            )
-        )
+	user_items.append(
+	    UserChecklistItem(
+		user=instance,
+		category=item.category,
+		name=item.name,
+		order=item.order,
+		is_system_default=False  # ユーザー用なのでFalse
+	    )
+	)
 \end{verbatim}
 
 
@@ -415,7 +427,7 @@ user_items = []
 
 \begin{verbatim}
 if user_items:
-          UserChecklistItem.objects.bulk_create(user_items)
+	  UserChecklistItem.objects.bulk_create(user_items)
 \end{verbatim}
 
 このようにすることで, ユーザーはアカウント作成直後から, 基本的な持ち物が登録されたチェックリストを利用できるようになり, 利便性が向上する. 
@@ -442,8 +454,10 @@ if user_items:
 
 これらの機能は,旅行前の準備を支援する上で重要な役割を果たしており,ユーザーが安心して出発できるよう,
 実用性と柔軟性を兼ね備えたチェックリスト管理環境を提供している.
+
+
 \subsection{共有機能}
-\label{sec:org0213633}
+\label{sec:orga2f8af3}
 本アプリでは, 図3.15に示したとおりユーザーが作成した旅行計画を他者と共有するためのリンク生成機能を実装した. 
 この機能により, ユーザーはパスワード付きの専用URLを発行し,家族や友人と旅行データを安全かつ手軽に共有できる. 
 共有リンクの作成時には, ユーザーがあらかじめ用意された選択肢から有効期間を選択できるように設計しており, 
@@ -487,7 +501,7 @@ if user_items:
 
 \newpage
 \subsection{UI設計とスタイルの工夫}
-\label{sec:org19e1703}
+\label{sec:org868f397}
 本システムでは, Bootstrap 5.1.3[10]を採用し, ユーザーインターフェースの視覚的理解を促進した. 
 
 観光地データなどの表示にBootstrapのカードコンポーネントを活用し, データの視認性と整理性を高めている. 
@@ -526,8 +540,10 @@ if user_items:
 \includegraphics[width=17cm]{./fig/drag.png}
 \caption{UI設計とスタイルの工夫.}
 \end{figure}
-\section{ユーザー評価と考察}
-\label{sec:orgc15b728}
+
+
+\section{ユーザー評価}
+\label{sec:orgf615f0a}
 
 6人の友人との旅行において, 本アプリの実際の画面を提示し, 使用感に関するフィードバックを得た.
 
@@ -539,17 +555,14 @@ if user_items:
 また, 6人中3人からは, 
 地図が表示され日程ごとにスケジュールを個別に確認できる点が，
 使いやすいという評価が得られた. 
-これは, 地図とスケジュールの連携表示についても, 
-視覚的な理解を促進する機能として有効であると推測される.  
-特に, 複数の目的地を巡る旅行においては, 
-地図上で訪問先の位置関係や移動の流れを確認できることが, 
-移動ルートの検討や時間配分の把握に役立つと考えられる.
+
+そのほか, 共有を行う際に有効期限を設定できる点が良いという声も聞かれた.
+この機能はフィードバック前から実装されていたが, 実際の利用者から肯定的な評価を得たことで, その有用性が確認された.
 
 
-そのほか, 共有を行う際に有効期限を設定できるのが良いという声があった.
-これについても最終版おいて機能として追加した．
+
 \chapter{まとめ}
-\label{sec:org8ec28d6}
+\label{sec:orgd3b9de8}
 
 本研究では，pythonで書かれたサーバー側WebアプリケーションフレームワークであるDjangoを開発環境として，
 視覚的な理解と効率的に旅行計画を行える旅行支援アプリを開発した.
